@@ -1,0 +1,26 @@
+==Release notes_Kings Caslon==
+
+Compiler of release notes: Dalton Maag
+Designer: Dalton Maag
+Designer URL: daltonmaag.com
+
+Date of creation: 2016-08-23
+
+Changes since version 2.001:
+- Added hinting
+- Updated font metrics
+
+Basic information
+1 Basic Family name: Kings Caslon
+2 TrueType Version record: 2.010
+3 Regional package: Latin
+4 Supported scripts: Latin
+5 Number of glyphs: 691
+6 Weights/Styles: Regular, Italic, Bold, Bold Italic, Display Regular, Display Italic
+7 Usage: Text and Display
+
+Technology
+1 File formats: The files have been delivered in the following formats: TrueType-based OpenType; EOT; WOFF; WOFF2.
+2 Embedding settings: Print and preview of the document is allowed (print and preview mode); subsetting is allowed.
+3 Hinting information: All glyphs are manually hinted for optimized rasterization in Microsoft ClearType or for other LCD devices.
+4 Default numerals: Tabular lining numerals as default. Also contains tabular oldstyle and proportional oldstyle figures.
