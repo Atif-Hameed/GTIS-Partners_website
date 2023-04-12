@@ -12,49 +12,87 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link href="index.css" rel="stylesheet">
     <title>GtisPartners</title>
+    <style>
+        .owl-dots {
+            color: blue;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 20px; /* Adjust the margin as needed */
+            width: 100%;
+        }
+        
+        .owl-dot {
+            background: blue;
+            margin-top: 30px;
+            margin-right: 2px; /* Adjust the margin between dots as needed */
+        }
+        .owl-dot span {
+            background: blue;
+        }
+    </style>
+    
+    
+    
+    
+    
+    
+    
 </head>
 
 <body>
+
     <!-- TOP MAIN NAVABR -->
     <div class="container-fluid g-0 ">
-        <div class="d-flex px-5" style="border-bottom: 1px solid black;">
-            <nav class="px-1 navbar navbar-expand-lg navbar-light" style="height: 59px;">
-                <div class="container-fluid d-flex justify-content-between gap-4">
+        <div class="d-flex ps-lg-5 px-md-4 px-0" style="border-bottom: 1px solid black; width: 100%;">
+            <nav class="px-2 navbar navbar-expand-lg navbar-light w-100" style="height: 59px;">
+                <div class="container-fluid w-100 d-flex justify-content-between ">
 
-                    <a class="navbar-brand" href="#"
+                    <a class="navbar-brand ps-0 " href="#">
+                        <img src="logo.png" class="mb-1" width="220rem" alt="">
+                    </a>
+                    <!-- <a class="navbar-brand" href="#"
                         style="font-family: 'Faktum'; font-size: 1.71rem; word-spacing: 0rem;">
-                        <span style="letter-spacing: 0.14rem;">GTIS</span> <span
-                            style="font-size: 1.75rem;">PARTNERS</span></a>
+                        <span style="letter-spacing: 0.2rem;">GTIS</span> <span
+                            style="font-size: 1.75rem;">PARTNERS</span></a> -->
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto" style="z-index: 10;" id="toggle-btn" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse ps-3" id="navbarNav">
-                        <ul class="navbar-nav gap-xl-5 gap-4 nav-top" style="font-family: 'Faktum';font-size: 1rem;">
-                            <li class="nav-item">
-                                <a class="nav-link " style="color: black;" href="#">Firm</a>
+                    <div class="collapse navbar-collapse ps-0 nav-collapse" style="z-index: 5;" id="navbarNav">
+                        <ul class="navbar-nav  nav-top mt-1" style="font-family: 'Faktum';font-size: 1rem;">
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Firm</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: black;" href="#">ESG</a>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">ESG</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: black;" href="#">Strategies & Portfolio</a>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Strategies & Portfolio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: black;" href="#">Research</a>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Research</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: black;" href="#">News</a>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">News</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: black;" href="#">Contact</a>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Contact</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: black;" href="#">Client Login</a>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Client Login</a>
                             </li>
                         </ul>
                     </div>
@@ -63,48 +101,53 @@
         </div>
     </div>
 
+
     <!-- MASK-VIDEO -->
-    <div class="container-fluid g-0">
-        <div class="hero">
-            <!-- Nav-DOWN -->
-            <div class="nav_down px-5" style="height: 60px;border-bottom: 1px solid black;">
-                <div class="px-1 d-flex py-3  justify-content-between align-items-center">
-                    <h6 class="m-0" style="font-size: 18px; font-family: 'Faktum-wide-bold'; color:black;">
-                        CURRENT FUND OFFERINGS
-                    </h6>
-                    <div class="d-flex gap-4 align-items-center open_page">
-                        <span style="font-family: 'Faktum'; font-size: 20px;">GTIS Qualified Opportunity Zone Fund
-                            II</span>
-                        <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid g-0 d-flex flex-column">
+        <div class="hero order-lg-2">
             <!-- VIDEO TEXT -->
-            <div>
-                <iframe
+            <!-- <div class=""   id="div-2"> -->
+            <!-- <iframe
                     src="https://player.vimeo.com/video/770939028?h=9e605137d7&title=0&byline=0&portrait=0&muted=1&autoplay=1&autopause=0&controls=0&loop=1&app_id=122963"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-                <div class="hero-text">
-                    <p class="p1">BUILDING</p>
-                    <p class="p2">THE</p>
-                    <p class="p3">LEADING</p>
-                    <p class="p4">EDGE</p>
-                </div>
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe> -->
+
+            <video class="d-none d-sm-block" src="video.mp4" autoplay muted loop></video>
+            <video class="d-block d-sm-none" src="video2.mp4" autoplay muted loop></video>
+            <div class="hero-text">
+                <p class="p1">BUILDING</p>
+                <p class="p2">THE</p>
+                <p class="p3">LEADING</p>
+                <p class="p4">EDGE</p>
             </div>
 
+            <!-- </div> -->
         </div>
 
+        <!-- Nav-DOWN -->
+        <div class=" nav_down px-lg-5 px-4 py-1 order-lg-1 d-flex align-items-center flex-wrap" id="div-1">
+            <div class="col-md-6 col-12 px-md-2 my-lg-0 my-sm-3 my-4">
+                <p class="m-0" style="font-size: 18px; font-family: 'Faktum-wide-bold'; color:black;">CURRENT FUND
+                    OFFERINGS</p>
+            </div>
+            <div class="col-md-6 col-12 open_page d-flex align-items-center justify-content-md-end">
+                <p class="m-0 d-flex align-items-center" style="font-family: 'Faktum'; font-size: 20px;">GTIS Qualified
+                    Opportunity Zone Fund II
+                    <i style="color: #536476; font-size: 2.2rem;" class=" ms-3 img2 bi bi-arrow-right-short"></i>
+                </p>
+            </div>
+        </div>
     </div>
+
 
     <!-- PARAGRAPH AND VIDEO -->
     <div class="container-fluid  paragraph_video">
-        <div class="row d-flex align-items-center">
-            <div class="col-lg-6">
-                <video class=""
+        <div class="row d-flex  align-items-center">
+            <div class="col-lg-6 px-3 mb-lg-0 mb-4">
+                <video class="video-paragraph"
                     src="https://cdn.sanity.io/files/tvz6muu8/production/e9f75fc7d0ab02e9e7488ef21161899694d50461.mp4"
-                    autoplay muted loop width="500rem"></video>
+                    autoplay muted loop></video>
             </div>
-            <div class="col-lg-6" style="font-family: 'Faktum'; font-size: 28px; line-height: 1.36;">
+            <div class="col-lg-6 px-lg-4 px-2 paragraph-video-text">
                 GTIS Partners is a leading real estate investment firm in the Americas, headquartered in New York with
                 offices in São Paulo, San Francisco, Los Angeles, Atlanta, Charlotte, Phoenix, Dallas, Paris and Munich.
                 GTIS Partners looks for markets and locations that have strong fundamental drivers such as job and
@@ -117,11 +160,14 @@
         </div>
     </div>
 
+
     <!-- BOXES -->
     <div class="container-fluid g-0">
-        <div class="position-relative boxes-heading py-3">
-            <p class="text-center fs-1 m-0" style="font-family: 'Faktum'; color: #000;">By The Numbers</p>
+        <div class="position-relative boxes-heading">
+            <p class="text-center m-0" style="font-size: 31px; font-family: 'Faktum'; color: #000;padding: 20px;">By The
+                Numbers</p>
         </div>
+
         <div>
             <div class="row g-0">
                 <div class="col-lg-4 text-center box-border">
@@ -196,6 +242,91 @@
 
             </div>
         </div>
+
+
+        <div id="myCarousel" class="owl-carousel owl-theme my-5">
+            <!-- <div class="carousel-inner"> -->
+
+                <div class="item">
+                    <div class="col-12 px-4 py-2">
+                        <p class="box-number  m-0 my-4"  data-number="17">17+ </p>
+                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.4rem; color: #000;">Year Track
+                            Record
+                        </p>
+                        <p class="box-text" style="font-family: 'Faktum';">GTIS identifies macro trends early, including investing in
+                            Brazil in 2005, US residential in
+                            2009, single-family rental as an emerging asset class in 2010 and build-to-rent in 2019
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-12 px-4 py-2">
+                        <p class="box-number  m-0 my-4"  data-number="17">$4.2B </p>
+                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">AUM*</p>
+                        <p class="box-text" style="font-family: 'Faktum';">GTIS has emerged as a leading residential and industrial
+                            investor in the US and among the largest private equity real estate firm in Brazil with
+                            total project cost of approximately $17 billion
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-12 px-4 py-2">
+                        <p class="box-number  m-0 my-4"  data-number="17">100% </p>
+                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">OF THE PARTNERS
+                            PROMOTED FROM WITHIN</p>
+                        <p class="box-text" style="font-family: 'Faktum';">GTIS is majority owned by its Partners, demonstrating a
+                            path to profit sharing for the future leaders of the firm
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-12 px-4 py-2">
+                        <p class="box-number  m-0 my-4"  data-number="17">15 </p>
+                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">AVERAGE GTIS
+                            PARTNERS TENURE</p>
+                        <p class="box-text" style="font-family: 'Faktum';">The eight partners have been together at GTIS for an
+                            average of 15 years, with almost 30 years of average industry experience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+
+                    <div class="col-12 px-4 py-2">
+                        <p class="box-number  m-0 my-4"  data-number="17">96 </p>
+                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">Employees</p>
+                        <p class="box-text" style="font-family: 'Faktum';">Located in key markets in the US and Brazil, the
+                            geographic diversity of our employees are an asset to our investment and asset management process
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="col-12 text-center box-border" style="border-right: 0;">
+                        <div class="overlay-effect text-start">
+                            <p class="pe-5" style="font-size: 18px; font-family: 'Faktum-bold';"><b>10 OFFICES ACROSS
+                                    US,
+                                    BRAZIL, AND EUORPE</b></p>
+                            <p style="font-family: 'Faktum';">Headquartered in New York with nine offices, GTIS takes a
+                                local investment approach with in-house investment, asset management, development or
+                                capital
+                                markets professionals</p>
+                        </div>
+                        <p class="box-number counter-number m-0 " data-number="10">10</p>
+                        <p class="m-0 " style=" font-family: 'Faktum'; font-size: 1.25rem; color: #000;">Offices across
+                            US,
+                            Brazil, and Euorpe</p>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+        </div>
+
+
         <div class="text-center mx-5" style="padding: 2rem 9.4rem;">
             <p class="m-0 lh-sm" style="font-size: 12px; font-family: 'Faktum';">*Gross AUM as of 9/30/22. Represents
                 the gross appraised value of assets managed by GTIS and its joint
@@ -209,6 +340,7 @@
                 Strategies</p>
         </div>
     </div>
+
 
     <!-- USA & BRAZIL -->
     <div class="container-fluid">
@@ -258,7 +390,7 @@
 
                 <div class="d-flex" style="flex-direction: column-reverse;">
                     <h1 class="ub-main-head  position-relative"><i id="dot-animate"
-                        class="fs-3 bi bi-circle-fill"></i>BRAZIL</h1>
+                            class="fs-3 bi bi-circle-fill"></i>BRAZIL</h1>
                     <img class="ub-images" width="100%"
                         src="https://cdn.sanity.io/images/tvz6muu8/production/6d382a505b77fa76498286823b6626e2ef6aa1c8-1250x600.jpg?w=3840&q=75&fit=clip&auto=format"
                         alt="">
@@ -294,6 +426,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- PRESS NEWS -->
     <div class="container-fluid px-lg-5 px-4">
@@ -377,6 +510,7 @@
         </div>
     </div>
 
+
     <!-- AUTOPLAY LOGOS -->
     <div class="marquee m-0 my-5">
         <div class="marquee--inner">
@@ -435,23 +569,123 @@
         </div>
     </div>
 
+
     <!-- BUILDING IMAG -->
     <div class="container-fluid py-4 px-5 mb-5">
         <div class="px-2">
             <div class="position-relative">
-                <div class="img-btn d-flex align-items-center">
+                <!-- <div class="img-btn d-flex align-items-center">
                     <div class="mx-4 w-100 d-flex align-items-center open_page justify-content-between">
                         <span class="img-btn-text" style="font-family: 'Faktum'; font-size: 20px;">Learn About Our ESG
                             Practices</span>
                         <a href="#" class=""><img class="img3 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
                     </div>
-                </div>
+                </div> -->
                 <div class="building-img"></div>
-                
+
             </div>
         </div>
     </div>
-    
+
+
+    <!-- PERSON AND PARAGRAPH -->
+    <div class="container-fluid pt-5 mb-5" style="border-top: 1.5px solid #000;">
+        <div class="row pt-4 px-5">
+            <div class="col-md-6 px-2 position-relative">
+                <!-- <div class="img-btn-2 d-flex align-items-center">
+                    <div class="mx-4 w-100 d-flex align-items-center open_page justify-content-between">
+                        <span class="img-btn-text-2" style="font-family: 'Faktum'; font-size: 20px;">Meet Our
+                            Team</span>
+                        <a href="#" class=""><img class="img3 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                    </div> -->
+            </div>
+            <img class="img-fluid person-img"
+                src="https://cdn.sanity.io/images/tvz6muu8/production/94e9b06d6f0e88745d2d609131957aa199dcc6b9-1312x1468.jpg?w=1200&q=75&fit=clip&auto=format"
+                alt="">
+        </div>
+        <div class="col-md-6 d-flex justify-content-center ps-5">
+            <div class="ms-3 ps-5">
+                <h1 class="mb-5 person-text fw-bold">“GTIS seeks to create differentiated returns by finding special
+                    opportunities and transforming real
+                    estate to its most productive use. We highly value our firm's collaborative culture and care
+                    deeply
+                    about the environment, our people, partners and governance.”</h1>
+                <h4 style="font-family: 'Faktum-wide-bold'; font-size: 18px;color: #000;">TOM SHAPIRO</h4>
+                <p style="font-family: 'Faktum'; font-size: 20px;">President and Chief Investment Officer</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer-pad" style="border-top: 1.5px solid #000;">
+        <div class="">
+            <h1 class="footer-heading">Interested in investing or partnering with us?</h1>
+            <a href="" class="my-5 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
+                Let's talk <img class="img4 pb-1" src="right-arrow.png" width="18rem" alt="">
+            </a>
+        </div>
+
+        <div class="row mb-5" style="margin-top: 9.3rem;">
+            <div class="col-md-7 gap-4 d-flex">
+                <div class="col-lg-7">
+                    <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">INQUIRIES</h5>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Investor Inquiries</p>
+                        <a href="" style="color: #000;">info@gtispartners.com</a>
+                    </div>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Operating Partner Inquiries</p>
+                        <a href="" style="color: #000;">info@gtispartners.com</a>
+                    </div>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Media Inquiries</p>
+                        <a href="" style="color: #000;">media@gtispartners.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">HEADQUARTERS</h5>
+                    <div class="mb-4" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="lh-sm">787 Seventh Avenue, 50th Fl
+                            New York, NY 10019</p>
+                    </div>
+                    <div style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">T: +1 212 220 5200</p>
+                        <p class="lh-sm">F: +1 212 220 5296</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex justify-content-end">
+                <img src="icon.png" height="260rem" alt="">
+            </div>
+        </div>
+
+        <div class=" row d-flex align-items-end flex-wrap footer-last">
+
+            <div class="col-lg-3">
+                <h3 class="m-0" style="font-family: 'Faktum'; letter-spacing: 2.26px;">GTIS <span
+                        style="letter-spacing: 0.26px;">PARTNERS</span></h3>
+            </div>
+
+            <div class="col-lg-3 d-flex pe-0 gap-2 flex-wrap">
+                <p class="m-0 footer-term position-relative"
+                    style="font-family: 'Faktum'; display: inline-block; font-size: 16px; word-spacing: 1px;">Terms of
+                    Use</p>
+                <p class="m-0 ms-4 footer-term position-relative"
+                    style="font-family: 'Faktum'; display: inline-block; font-size: 16px;">Privacy</p>
+            </div>
+
+            <div class="col-lg-5 ps-0">
+                <p class="m-0" style="color: #999999; font-family: 'Faktum'; font-size: 16px;">© 2023 GTIS Partners LP.
+                    All
+                    Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- COUNT-UP -->
     <!-- <script>
         const counterNumber = document.querySelectorAll('.counter-number');
@@ -497,7 +731,47 @@
 
 
 
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const box = document.querySelector('.nav-collapse');
+        const forclose = document.querySelector('.navClose');
 
+        toggleBtn.addEventListener('click', () => {
+            box.classList.toggle('show-nav');
+        });
+        forclose.addEventListener('click', () => {
+            box.classList.remove('show-nav');
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#myCarousel').owlCarousel({
+                items: 1,
+                loop: true,
+                // margin: 10,
+                autoplay: false,
+            
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    768:{
+                        items: 1
+                    },
+                    992:{
+                        items: 1
+                    },
+                    1200:{
+                        items: 1,
+                        loop: true,
+                        autoplay: false,
+                    }
+                }
+            });
+        });
+    </script>
 
 
 

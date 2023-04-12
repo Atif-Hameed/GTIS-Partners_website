@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <style>
+        .bi-arrow-right-short {
+  transform: rotate(313deg);
+  display: inline-block;
+}
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="text-center mt-5" style="font-size: 5rem;color: #536476;">Sometext<i class="bi bi-arrow-right-short"></i></p>
+    </div>
+
+    <div id="myCarousel" class="owl-carousel owl-theme">
+        <!-- <div class="carousel-inner"> -->
+            <div class="item ">
+              <div class="row bg-warning">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card 1</h5>
+                      <p class="card-text">Some text for card 1.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item ">
+              <div class="row bg-danger">
+                <div class="col-12 ">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card 2</h5>
+                      <p class="card-text">Some text for card 2.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item ">
+              <div class="row bg-warning">
+                <div class="col-12 ">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card 3</h5>
+                      <p class="card-text">Some text for card 3.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+          
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('#myCarousel').owlCarousel({
+                items: 1,
+                loop: true,
+                // margin: 10,
+                autoplay: false,
+            
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    768:{
+                        items: 1
+                    },
+                    992:{
+                        items: 1
+                    },
+                    1200:{
+                        items: 1,
+                        loop: true,
+                        autoplay: false,
+                    }
+                }
+            });
+        });
+    </script>
+        
+</body>
+
+</html>
