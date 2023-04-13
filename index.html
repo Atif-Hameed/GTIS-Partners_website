@@ -18,60 +18,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link href="index.css" rel="stylesheet">
     <title>GtisPartners</title>
-    <style>
-        .owl-dots {
-            color: blue;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            transform: translateY(-50%);
-            display: flex;
-            justify-content: flex-start;
-            margin-left: 20px; /* Adjust the margin as needed */
-            width: 100%;
-        }
-        
-        .owl-dot {
-            background: blue;
-            margin-top: 30px;
-            margin-right: 2px; /* Adjust the margin between dots as needed */
-        }
-        .owl-dot span {
-            background: blue;
-        }
-    </style>
-    
-    
-    
-    
-    
-    
-    
 </head>
 
 <body>
 
     <!-- TOP MAIN NAVABR -->
     <div class="container-fluid g-0 ">
-        <div class="d-flex ps-lg-5 px-md-4 px-0" style="border-bottom: 1px solid black; width: 100%;">
+        <div class="d-flex ps-lg-5 px-md-4 px-0 " style="border-bottom: 1px solid black; width: 100%;">
             <nav class="px-2 navbar navbar-expand-lg navbar-light w-100" style="height: 59px;">
                 <div class="container-fluid w-100 d-flex justify-content-between ">
 
-                    <a class="navbar-brand ps-0 " href="#">
-                        <img src="logo.png" class="mb-1" width="220rem" alt="">
+                    <a class="navbar-brand ps-0 " href="#" style="z-index: 10;">
+                        <img src="logo-removebg-preview.png" class="mb-1" width="220rem" alt="">
                     </a>
-                    <!-- <a class="navbar-brand" href="#"
-                        style="font-family: 'Faktum'; font-size: 1.71rem; word-spacing: 0rem;">
-                        <span style="letter-spacing: 0.2rem;">GTIS</span> <span
-                            style="font-size: 1.75rem;">PARTNERS</span></a> -->
-
                     <button class="navbar-toggler ms-auto" style="z-index: 10;" id="toggle-btn" type="button"
                         data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse ps-0 nav-collapse" style="z-index: 5;" id="navbarNav">
+                    <div class="collapse navbar-collapse ps-0 nav-collapse " style="z-index: 5;" id="navbarNav">
                         <ul class="navbar-nav  nav-top mt-1" style="font-family: 'Faktum';font-size: 1rem;">
                             <li class="nav-item ">
                                 <a class="nav-link px-3" style="color: black;" href="#">Firm</a>
@@ -105,14 +71,9 @@
     <!-- MASK-VIDEO -->
     <div class="container-fluid g-0 d-flex flex-column">
         <div class="hero order-lg-2">
-            <!-- VIDEO TEXT -->
-            <!-- <div class=""   id="div-2"> -->
-            <!-- <iframe
-                    src="https://player.vimeo.com/video/770939028?h=9e605137d7&title=0&byline=0&portrait=0&muted=1&autoplay=1&autopause=0&controls=0&loop=1&app_id=122963"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe> -->
 
-            <video class="d-none d-sm-block" src="video.mp4" autoplay muted loop></video>
-            <video class="d-block d-sm-none" src="video2.mp4" autoplay muted loop></video>
+            <video class="d-none d-sm-block" src="/video/video.mp4" autoplay muted loop></video>
+            <video class="d-block d-sm-none" src="/video/video3.mp4" autoplay muted loop></video>
             <div class="hero-text">
                 <p class="p1">BUILDING</p>
                 <p class="p2">THE</p>
@@ -168,7 +129,7 @@
                 Numbers</p>
         </div>
 
-        <div>
+        <div class="d-none d-lg-block">
             <div class="row g-0">
                 <div class="col-lg-4 text-center box-border">
                     <div class="overlay-effect text-start">
@@ -244,99 +205,103 @@
         </div>
 
 
-        <div id="myCarousel" class="owl-carousel owl-theme my-5">
+        <div id="myCarousel" class="d-lg-none owl-carousel owl-theme mb-5 ps-2 ">
             <!-- <div class="carousel-inner"> -->
 
-                <div class="item">
-                    <div class="col-12 px-4 py-2">
-                        <p class="box-number  m-0 my-4"  data-number="17">17+ </p>
-                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.4rem; color: #000;">Year Track
-                            Record
-                        </p>
-                        <p class="box-text" style="font-family: 'Faktum';">GTIS identifies macro trends early, including investing in
-                            Brazil in 2005, US residential in
-                            2009, single-family rental as an emerging asset class in 2010 and build-to-rent in 2019
-                        </p>
-                    </div>
+            <div class="item">
+                <div class="col-12 px-sm-4 px-3 py-2">
+                    <p class="box-number  m-0 my-4" data-number="17">17+ </p>
+                    <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.4rem; color: #000;">Year Track
+                        Record
+                    </p>
+                    <p class="box-text" style="font-family: 'Faktum';">GTIS identifies macro trends early, including
+                        investing in
+                        Brazil in 2005, US residential in
+                        2009, single-family rental as an emerging asset class in 2010 and build-to-rent in 2019
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-12 px-sm-4 px-3 py-2">
+                    <p class="box-number  m-0 my-4" data-number="17">$4.2B </p>
+                    <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">AUM*</p>
+                    <p class="box-text" style="font-family: 'Faktum';">GTIS has emerged as a leading residential and
+                        industrial
+                        investor in the US and among the largest private equity real estate firm in Brazil with
+                        total project cost of approximately $17 billion
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-12 px-sm-4 px-3 py-2">
+                    <p class="box-number  m-0 my-4" data-number="17">100% </p>
+                    <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">OF THE
+                        PARTNERS
+                        PROMOTED FROM WITHIN</p>
+                    <p class="box-text" style="font-family: 'Faktum';">GTIS is majority owned by its Partners,
+                        demonstrating a
+                        path to profit sharing for the future leaders of the firm
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-12 px-sm-4 px-3 py-2">
+                    <p class="box-number  m-0 my-4" data-number="17">15 </p>
+                    <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">AVERAGE GTIS
+                        PARTNERS TENURE</p>
+                    <p class="box-text" style="font-family: 'Faktum';">The eight partners have been together at GTIS for
+                        an
+                        average of 15 years, with almost 30 years of average industry experience
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="col-12 px-sm-4 px-3 py-2">
+                    <p class="box-number  m-0 my-4" data-number="17">96 </p>
+                    <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">EMPLOYEES</p>
+                    <p class="box-text" style="font-family: 'Faktum';">Located in key markets in the US and Brazil, the
+                        geographic diversity of our employees are an asset to our investment and asset management
+                        process
+                    </p>
                 </div>
 
-                <div class="item">
-                    <div class="col-12 px-4 py-2">
-                        <p class="box-number  m-0 my-4"  data-number="17">$4.2B </p>
-                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">AUM*</p>
-                        <p class="box-text" style="font-family: 'Faktum';">GTIS has emerged as a leading residential and industrial
-                            investor in the US and among the largest private equity real estate firm in Brazil with
-                            total project cost of approximately $17 billion
-                        </p>
-                    </div>
+            </div>
+
+            <div class="item">
+
+                <div class="col-12 px-sm-4 px-3 py-2">
+                    <p class="box-number  m-0 my-4" data-number="17">10</p>
+                    <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">OFFICES
+                        ACROSS
+                        US, BRAZIL, AND EUOROPE</p>
+                    <p class="box-text" style="font-family: 'Faktum';">Headquartered in New York with nine offices, GTIS
+                        takes a
+                        local investment approach with in-house investment, asset management, development or
+                        capital markets professionals
+                    </p>
                 </div>
 
-                <div class="item">
-                    <div class="col-12 px-4 py-2">
-                        <p class="box-number  m-0 my-4"  data-number="17">100% </p>
-                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">OF THE PARTNERS
-                            PROMOTED FROM WITHIN</p>
-                        <p class="box-text" style="font-family: 'Faktum';">GTIS is majority owned by its Partners, demonstrating a
-                            path to profit sharing for the future leaders of the firm
-                        </p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="col-12 px-4 py-2">
-                        <p class="box-number  m-0 my-4"  data-number="17">15 </p>
-                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">AVERAGE GTIS
-                            PARTNERS TENURE</p>
-                        <p class="box-text" style="font-family: 'Faktum';">The eight partners have been together at GTIS for an
-                            average of 15 years, with almost 30 years of average industry experience
-                        </p>
-                    </div>
-                </div>
-
-                <div class="item">
-
-                    <div class="col-12 px-4 py-2">
-                        <p class="box-number  m-0 my-4"  data-number="17">96 </p>
-                        <p class="" style=" font-family: 'Faktum-wide-bold'; font-size: 1.25rem; color: #000;">Employees</p>
-                        <p class="box-text" style="font-family: 'Faktum';">Located in key markets in the US and Brazil, the
-                            geographic diversity of our employees are an asset to our investment and asset management process
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="item">
-                    <div class="col-12 text-center box-border" style="border-right: 0;">
-                        <div class="overlay-effect text-start">
-                            <p class="pe-5" style="font-size: 18px; font-family: 'Faktum-bold';"><b>10 OFFICES ACROSS
-                                    US,
-                                    BRAZIL, AND EUORPE</b></p>
-                            <p style="font-family: 'Faktum';">Headquartered in New York with nine offices, GTIS takes a
-                                local investment approach with in-house investment, asset management, development or
-                                capital
-                                markets professionals</p>
-                        </div>
-                        <p class="box-number counter-number m-0 " data-number="10">10</p>
-                        <p class="m-0 " style=" font-family: 'Faktum'; font-size: 1.25rem; color: #000;">Offices across
-                            US,
-                            Brazil, and Euorpe</p>
-                    </div>
-                </div>
+            </div>
             <!-- </div> -->
 
         </div>
 
 
-        <div class="text-center mx-5" style="padding: 2rem 9.4rem;">
-            <p class="m-0 lh-sm" style="font-size: 12px; font-family: 'Faktum';">*Gross AUM as of 9/30/22. Represents
+        <div class="text-md-center boxes-text">
+            <p class="m-0" style="font-size: 12px; font-family: 'Faktum';">*Gross AUM as of 9/30/22. Represents
                 the gross appraised value of assets managed by GTIS and its joint
                 venture partners and includes minority joint venture partners’ ownership interests where applicable.
                 Figures include limited partner unfunded commitments, or uninvested cash on fund’s balance sheet, to
                 GTIS separate accounts, funds, and co-investment vehicles that are not considered to be Clients by SEC
                 definition</p>
         </div>
-        <div class="position-relative boxes-heading py-3">
-            <p class="text-center m-0" style="font-size: 2.35rem; font-family: 'Faktum'; color: #000;">Explore Our
+        <div class="position-relative boxes-heading py-3 px-sm-0 px-4">
+            <p class="text-center m-0 explor" style=" font-family: 'Faktum'; color: #000;">Explore Our
                 Strategies</p>
         </div>
     </div>
@@ -346,7 +311,7 @@
     <div class="container-fluid">
         <div class="row position-relative mb-5" style="border-bottom: 1.5px solid #000;">
 
-            <div class="col-md-6 ub-pading">
+            <div class="col-md-6 ub-pading" style="border-bottom: 1.5px solid #000;">
 
                 <div class="d-flex" style="flex-direction: column-reverse;">
                     <h1 class="ub-main-head   position-relative"><i id="dot-animate" class="fs-3 bi bi-circle-fill"></i>
@@ -386,7 +351,7 @@
 
             </div>
 
-            <div class="col-md-6 ub-pading position-relative">
+            <div class="col-md-6 ub-pading position-relative" style="border-bottom: 1.5px solid #000;">
 
                 <div class="d-flex" style="flex-direction: column-reverse;">
                     <h1 class="ub-main-head  position-relative"><i id="dot-animate"
@@ -432,75 +397,100 @@
     <div class="container-fluid px-lg-5 px-4">
         <div class="row px-2 d-flex">
             <div class="col-lg-5">
-                <p class="mt-4 pt-2" style="font-family: 'Faktum'; font-size: 2.3rem; color: #000;">Press</p>
+                <p class="mt-lg-4 mt-sm-1 pt-sm-2 mt-0 pt-0 press" style="font-family: 'Faktum';  color: #000;">Press
+                </p>
             </div>
             <div class="col-lg-7 ps-lg-5">
                 <ul class="ps-lg-5 pt-2 p-0">
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2023</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">GTIS
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2023</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GTIS
                             PARTNERS LAUNCHES BUILD-TO-RENT COMMUNITY DEVELOPMENT COMPANY TAVALO
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR Newswire
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR
+                                Newswire
                             </p>
                         </a>
                     </li>
 
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2023</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">CLOSING BELL: OVERTIME - COST OF
+                    <li class="d-flex  gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2023</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">CLOSING BELL:
+                            OVERTIME - COST OF
                             KEEPING A TENANT HAS GONE UP DRAMATICALLY, SAYS GTIS’S TOM SHAPIRO
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">CNBC</p>
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">CNBC
+                            </p>
                         </a>
                     </li>
 
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">GTIS NAMES FOUR NEW PARTNERS
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GTIS NAMES
+                            FOUR NEW PARTNERS
                         </a>
                     </li>
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS LAUNCHES OPPORTUNITY
+                    <li class="d-flex  gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS
+                            LAUNCHES OPPORTUNITY
                             ZONE FUND II
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR Newswire
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR
+                                Newswire
                             </p>
                         </a>
                     </li>
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">INVESTORS TURN TO RESIDENTIAL
+                    <li class="d-flex  gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">INVESTORS
+                            TURN TO RESIDENTIAL
                             OPPORTUNITIES IN EMERGING MARKETS
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PERE News</p>
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PERE
+                                News</p>
                         </a>
                     </li>
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS PRESIDENT ON
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS
+                            PRESIDENT ON
                             COMMERCIAL REAL ESTATE
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">Bloomberg</p>
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">
+                                Bloomberg</p>
                         </a>
                     </li>
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS CLOSES ON
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS
+                            CLOSES ON
                             BUILD-TO-RENT PROJECT IN TAMPA
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR Newswire
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR
+                                Newswire
                             </p>
                         </a>
                     </li>
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS RAISES $630 MILLION
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GTIS PARTNERS
+                            RAISES $630 MILLION
                             QUALIFIED OPPORTUNITY ZONE FUND
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR Newswire
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">PR
+                                Newswire
                             </p>
                         </a>
                     </li>
-                    <li class="d-flex gap-5 my-4">
-                        <p class="" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">2022</p>
-                        <a class="ms-4 lh-sm text-decoration-none press-news" href="">INTERVIEW WITH JASON RHEES, CEO OF
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">INTERVIEW
+                            WITH JASON RHEES, CEO OF
                             HERCUTECH
-                            <p class="mt-1 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">
                                 InvestorBridge
                             </p>
                         </a>
@@ -512,7 +502,7 @@
 
 
     <!-- AUTOPLAY LOGOS -->
-    <div class="marquee m-0 my-5">
+    <div class="marquee m-0 mt-5">
         <div class="marquee--inner">
             <span class="logo-contain">
                 <img class="logo"
@@ -571,16 +561,17 @@
 
 
     <!-- BUILDING IMAG -->
-    <div class="container-fluid py-4 px-5 mb-5">
-        <div class="px-2">
+    <div class="container-fluid  build-contain ">
+        <div class="px-sm-2">
             <div class="position-relative">
-                <!-- <div class="img-btn d-flex align-items-center">
-                    <div class="mx-4 w-100 d-flex align-items-center open_page justify-content-between">
+                <div class="img-btn d-flex align-items-center">
+                    <div class="mx-4 w-100 d-flex align-items-sm-center open_page justify-content-between">
                         <span class="img-btn-text" style="font-family: 'Faktum'; font-size: 20px;">Learn About Our ESG
                             Practices</span>
-                        <a href="#" class=""><img class="img3 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                        <a href="#" class="mt-sm-0 mt-1"><img class="img3 pb-1" src="right-arrow.png" width="18rem"
+                                alt=""></a>
                     </div>
-                </div> -->
+                </div>
                 <div class="building-img"></div>
 
             </div>
@@ -589,32 +580,33 @@
 
 
     <!-- PERSON AND PARAGRAPH -->
-    <div class="container-fluid pt-5 mb-5" style="border-top: 1.5px solid #000;">
-        <div class="row pt-4 px-5">
-            <div class="col-md-6 px-2 position-relative">
-                <!-- <div class="img-btn-2 d-flex align-items-center">
+    <div class="container-fluid person-paragraph-container" style="border-top: 1.5px solid #000;">
+        <div class="row g-0">
+            <div class="col-md-6 col-12 position-relative">
+                <div class="img-btn-2 d-flex align-items-center">
                     <div class="mx-4 w-100 d-flex align-items-center open_page justify-content-between">
                         <span class="img-btn-text-2" style="font-family: 'Faktum'; font-size: 20px;">Meet Our
                             Team</span>
                         <a href="#" class=""><img class="img3 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
-                    </div> -->
+                    </div>
+                </div>
+                <img class="img-fluid person-img"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/94e9b06d6f0e88745d2d609131957aa199dcc6b9-1312x1468.jpg?w=1200&q=75&fit=clip&auto=format"
+                    alt="">
             </div>
-            <img class="img-fluid person-img"
-                src="https://cdn.sanity.io/images/tvz6muu8/production/94e9b06d6f0e88745d2d609131957aa199dcc6b9-1312x1468.jpg?w=1200&q=75&fit=clip&auto=format"
-                alt="">
-        </div>
-        <div class="col-md-6 d-flex justify-content-center ps-5">
-            <div class="ms-3 ps-5">
-                <h1 class="mb-5 person-text fw-bold">“GTIS seeks to create differentiated returns by finding special
-                    opportunities and transforming real
-                    estate to its most productive use. We highly value our firm's collaborative culture and care
-                    deeply
-                    about the environment, our people, partners and governance.”</h1>
-                <h4 style="font-family: 'Faktum-wide-bold'; font-size: 18px;color: #000;">TOM SHAPIRO</h4>
-                <p style="font-family: 'Faktum'; font-size: 20px;">President and Chief Investment Officer</p>
+            <div class="col-md-6 col-12 d-flex justify-content-center person-text-container">
+                <div class="">
+                    <h1 class="mb-5 person-text fw-bold">“GTIS seeks to create differentiated returns by finding special
+                        opportunities and transforming real
+                        estate to its most productive use. We highly value our firm's collaborative culture and care
+                        deeply
+                        about the environment, our people, partners and governance.”</h1>
+                    <h4 style="font-family: 'Faktum-wide-bold'; font-size: 18px;color: #000;">TOM SHAPIRO</h4>
+                    <p class="mb-lg-3 mb-0" style="font-family: 'Faktum'; font-size: 21px;">President and Chief
+                        Investment Officer</p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -622,14 +614,14 @@
     <div class="container-fluid footer-pad" style="border-top: 1.5px solid #000;">
         <div class="">
             <h1 class="footer-heading">Interested in investing or partnering with us?</h1>
-            <a href="" class="my-5 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
+            <a href="" class="my-lg-5 my-4 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
                 Let's talk <img class="img4 pb-1" src="right-arrow.png" width="18rem" alt="">
             </a>
         </div>
 
-        <div class="row mb-5" style="margin-top: 9.3rem;">
-            <div class="col-md-7 gap-4 d-flex">
-                <div class="col-lg-7">
+        <div class="row footer-mid-pad">
+            <div class="col-md-8 gap-4 d-flex flex-wrap">
+                <div class="col-lg-6 col-sm-7 col-12 mb-lg-0 mb-1">
                     <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">INQUIRIES</h5>
                     <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
                         <p class="m-0 lh-sm">Investor Inquiries</p>
@@ -644,45 +636,49 @@
                         <a href="" style="color: #000;">media@gtispartners.com</a>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">HEADQUARTERS</h5>
-                    <div class="mb-4" style="font-family: 'Faktum';font-size: 20px;">
-                        <p class="lh-sm">787 Seventh Avenue, 50th Fl
-                            New York, NY 10019</p>
-                    </div>
-                    <div style="font-family: 'Faktum';font-size: 20px;">
-                        <p class="m-0 lh-sm">T: +1 212 220 5200</p>
-                        <p class="lh-sm">F: +1 212 220 5296</p>
+                <div class="col-lg-5 col-sm-7 col-10 d-flex ps-lg-1">
+                    <div>
+                        <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">HEADQUARTERS
+                        </h5>
+                        <div class="mb-4" style="font-family: 'Faktum';font-size: 20px;">
+                            <p class="lh-sm">787 Seventh Avenue, 50th Fl
+                                New York, NY 10019</p>
+                        </div>
+                        <div style="font-family: 'Faktum';font-size: 20px;">
+                            <p class="m-0 lh-sm">T: +1 212 220 5200</p>
+                            <p class="lh-sm">F: +1 212 220 5296</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 d-flex justify-content-end">
+            <div class="col-md-4 d-flex justify-content-md-end mt-sm-0 mt-4 pt-sm-0 pt-2">
                 <img src="icon.png" height="260rem" alt="">
             </div>
         </div>
 
-        <div class=" row d-flex align-items-end flex-wrap footer-last">
-
-            <div class="col-lg-3">
-                <h3 class="m-0" style="font-family: 'Faktum'; letter-spacing: 2.26px;">GTIS <span
-                        style="letter-spacing: 0.26px;">PARTNERS</span></h3>
+        <div class="d-flex gap-sm-5 gap-4 align-items-end footer-last flex-wrap">
+            <div class="pb-1">
+                <img class="logo-img" src="logo-removebg-preview.png" width="220rem" alt="">
             </div>
 
-            <div class="col-lg-3 d-flex pe-0 gap-2 flex-wrap">
-                <p class="m-0 footer-term position-relative"
+            <div class="mt-sm-0 mt-2 d-flex gap-sm-4 gap-3 flex-wrap">
+                <p class="m-0 col-sm-auto col-12 footer-term position-relative"
                     style="font-family: 'Faktum'; display: inline-block; font-size: 16px; word-spacing: 1px;">Terms of
                     Use</p>
-                <p class="m-0 ms-4 footer-term position-relative"
+                <p class="m-0 ms-sm-2  col-sm-auto col-12  footer-term position-relative"
                     style="font-family: 'Faktum'; display: inline-block; font-size: 16px;">Privacy</p>
             </div>
 
-            <div class="col-lg-5 ps-0">
+            <div class="mt-sm-0 mt-2 col-sm-auto col-7">
                 <p class="m-0" style="color: #999999; font-family: 'Faktum'; font-size: 16px;">© 2023 GTIS Partners LP.
                     All
                     Rights Reserved.</p>
             </div>
+
         </div>
     </div>
+
+
 
 
 
@@ -732,6 +728,15 @@
 
 
     <script>
+        const toggleButton = document.querySelector('.navbar-toggler');
+        const toggleIcon = document.querySelector('.navbar-toggler-icon');
+
+        toggleButton.addEventListener('click', function () {
+            toggleIcon.classList.toggle('fa-bars');
+            toggleIcon.classList.toggle('fa-times'); 
+        });
+
+
         const toggleBtn = document.getElementById('toggle-btn');
         const box = document.querySelector('.nav-collapse');
         const forclose = document.querySelector('.navClose');
@@ -746,24 +751,24 @@
     </script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#myCarousel').owlCarousel({
                 items: 1,
                 loop: true,
                 // margin: 10,
                 autoplay: false,
-            
-                responsive:{
-                    0:{
+
+                responsive: {
+                    0: {
                         items: 1
                     },
-                    768:{
+                    768: {
                         items: 1
                     },
-                    992:{
+                    992: {
                         items: 1
                     },
-                    1200:{
+                    1200: {
                         items: 1,
                         loop: true,
                         autoplay: false,
