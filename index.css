@@ -182,7 +182,32 @@
 .byNumber-border.active::before {
     width: 100%;
 }
+.byNumber-border-2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    border-top: 1px solid #000;
+    transition: all 0.8s;
+}
 
+.byNumber-border-2.active::before {
+    width: 100%;
+}
+.byNumber-border-2::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 1.5px solid #000;
+    transition: all 1.5s;
+}
+
+.byNumber-border-2.active::after {
+    width: 100%;
+}
 
 .box1-border::after {
     position: absolute;
@@ -352,9 +377,9 @@
 
 /* LOGO ANIMATION */
 .logo {
-    height: 2.3rem;
+    height: 5.3rem;
     display: inline-block;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 5rem;
     float: left;
     transition: all .2s ease-out;
 }
@@ -619,7 +644,6 @@
 }
 
 .boxes-text {
-    /* border-top: 1px solid black; */
     padding: 32px 55px;
     margin: 0 146px;
 }
@@ -674,7 +698,8 @@
 }
 
 .firm-hero-border.active::after {
-    width: 100%;
+    width: 200%;
+    overflow-x: hidden;
 }
 
 .firm-number-ub {
@@ -683,20 +708,23 @@
 
 .firm-box-pad {
     padding-right: 55px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 
 .firm-box-number {
     font-family: 'king_calson', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     line-height: 1.25;
     letter-spacing: -.03em;
     color: rgb(83 100 118);
 }
 
 .firm-hero-2 {
+    padding: 72px 55px 160px 55px;
+}
+.firm-hero-3 {
     padding: 72px 55px 160px 55px;
 }
 
@@ -830,9 +858,53 @@ section{
 .owl-next:hover {
   background-color: transparent !important;
 }
+.esg-hero-photo{
+    padding: 10px 100px 10px 80px;
+}
+.esg-line-animate::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    border-top: 1px solid #000;
+    transition: all 1.5s;
+}
+.esg-line-animate.active::before{
+    width: 100%;
+}
+.esg-hero-photo-2{
+    padding: 100px 45px;
+}
+.esg-hero-photo-3{
+    padding: 0px 55px 0px 110px;
+}
+.esg-hero-photo-4{
+    padding: 78px 45px 0px 45px;
+}
+.esg-hero-photo-5{
+    padding: 42px 55px 0px 55px;
+}
 
+.esg-ub-lines::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 1px solid #000;
+    transition: all 1s;
+}
 
-
+.esg-ub-lines.active::after {
+    width: 100%;
+}
+.firm-ub-pad{
+    padding: 30px 0;
+}
+.firm-client-img{
+    border-radius: 10px;
+}
 /* XL SIZE */
 @media screen and (max-width: 1150px) {
     #navbarNav ul li {
@@ -1004,6 +1076,37 @@ section{
     .firm-team-member {
         width: 100%;
     }
+    .firm-hero-text {
+        margin-bottom: 72px;
+        font-size: 34px;
+        line-height: 1.12;
+    }
+    .firm-hero {
+        padding: 72px 32px 0 32px;
+    }
+    .firm-hero-video-text p {
+        margin-bottom: 5px;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+    .firm-number-ub {
+        margin-top: 16px;
+    }
+    .firm-ub-pad{
+        padding: 15px 0;
+    }
+    .firm-box-pad {
+        padding-right: 55px;
+        margin-bottom: 28px;
+    }
+    .firm-client-img{
+        border-radius: 10px;
+        height: 15rem;
+    }
+    .esg-hero-photo{
+        padding: 10px 10px 10px 10px;
+    }
+
 }
 
 /* SMALL SIZE */
@@ -1116,5 +1219,47 @@ section{
 
     .footer-pad {
         padding: 50px 22px 36px;
+    }
+    .firm-nav{
+        white-space: nowrap; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch;
+    }
+    .firm-nav-contain{
+        max-width: 100%; 
+        overflow: hidden;
+    }
+    .firm-nav-contain::-webkit-scrollbar {
+        display: none;
+      }
+    .firm-nav::-webkit-scrollbar {
+        display: none;
+      }
+    .firm-hero {
+        padding: 40px 22px 0 22px;
+    }
+    .firm-hero-text {
+        margin-bottom: 50px;
+        font-size: 34px;
+        line-height: 1.2;
+    }
+    .firm-hero-border.active::after {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .firm-hero-3 {
+        padding: 40px 22px 72px 22px;
+    }
+    .firm-team-nav::after {
+        bottom: 0;
+    }
+    .firm-team-pad {
+        margin-top: 60px;
+    }
+    .firm-team-member {
+        margin-bottom: 60px;
+    }
+    .firm-team-pad-2 {
+        margin-top: 0;
     }
 }

@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link href="index.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>ESG | GTIS Partners</title>
+</head>
+
+<body>
+    <!-- TOP MAIN NAVABR -->
+    <div class="container-fluid g-0 ">
+        <div class="d-flex ps-lg-5 px-md-4 px-0 position-relative"
+            style="border-bottom: 0.8px solid black; width: 100%;">
+            <nav class="px-2 navbar navbar-expand-lg navbar-light w-100 " style="height: 59px;">
+                <div class="container-fluid w-100 d-flex justify-content-between ">
+
+                    <a class="navbar-brand ps-0 " href="index.html" style="z-index: 10;">
+                        <img src="logo-removebg-preview.png" class="mb-1" width="220rem" alt="">
+                    </a>
+                    <button class="navbar-toggler ms-auto" style="z-index: 10;" id="toggle-btn" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="fs-1 bi-list" id="toggle-icon"></span> -->
+                    </button>
+
+                    <div class="collapse navbar-collapse ps-0 nav-collapse " style="z-index: 5;" id="navbarNav">
+                        <ul class="navbar-nav  nav-top mt-1" style="font-family: 'Faktum';font-size: 1rem;">
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="firm.html">Firm</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="esg.html">ESG</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Strategies & Portfolio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Research</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">News</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Client Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- STICKY NAVBAR -->
+    <div class="container-fluid g-0 sticky-top d-none d-md-block">
+        <div class="d-flex position-relative"
+            style="z-index: 5; background-color: #fff; border-bottom: 0.8px solid black; width: 100%;">
+            <nav class=" navbar navbar-expand-md navbar-light w-100 " style="height: 59px;">
+                <div class="container-fluid w-100  ">
+                    <div class="d-flex justify-content-center collapse navbar-collapse ps-0  " style="z-index: 5;"
+                        id="navbarNav">
+                        <ul class="navbar-nav  nav-top mt-1" style="font-family: 'Faktum';font-size: 1rem;">
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="firm.html">Sustainability</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Diversity, Equity and
+                                    Inclusion</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Our Policies</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Awards & Accolades</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="container-fluid firm-hero">
+        <p class="firm-hero-text" style="font-family: 'Faktum';">GTIS has long seen compelling value in sustainable
+            development and management.
+        </p>
+
+
+        <!--  SUSTAINABILITY -->
+        <div class="row d-flex align-items-center mb-5">
+            <div class="col-lg-6 esg-hero-photo">
+                <img src="https://cdn.sanity.io/images/tvz6muu8/production/c104ed17d01379b91b6284aeeb24694b03061aa0-1000x667.jpg?w=2048&q=75&fit=clip&auto=format"
+                    class="img-fluid " style="border-radius: 10px;" alt="">
+            </div>
+            <div class="col-lg-6 firm-hero-video-text">
+                <h6 class="my-4" style="font-family: 'Faktum-wide-bold'; font-size: 18px;color: #000;">
+                    SUSTAINABILITY</h6>
+                <p>We have been integrating ESG considerations into our business model since we submitted our first
+                    assessment to GRESB (Global Real Estate Sustainability Benchmark) in 2012. GRESB has provided us
+                    with the initial framework to guide our business, and some of our funds have consistently received
+                    top scores in the annual surveys within their respective peer groups for more than five years. Among
+                    other credentials, in May 2021 GTIS was named a Green Leasing Leader at the Gold level by the U.S.
+                    Department of Energy Better Buildings Alliance.</p><br>
+                <p>The GTIS Brazil Real Estate Fund I has been recognized as 2022's most sustainable private equity real
+                    estate investment fund in South America by the Global Real Estate Sustainability Benchmark
+                    ("GRESB"). This is the eighth consecutive year the fund has been ranked number one by GRESB, in
+                    addition, GTIS Brazil Real Estate Funds III and II took second and fourth-place honors,
+                    respectively. GRESB also awarded two new accolades to the firm this year, naming GTIS Brazil Fund I
+                    as a Regional Sector Leader, Americas, Office and a Regional Non-listed Sector Leader, Americas,
+                    Office.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DIVERSITY, EQUITY, & INCLUSION -->
+    <div class="container-fluid esg-line-animate position-relative reveal">
+        <div class="row  d-flex align-items-center esg-hero-photo-2">
+            <div class="col-lg-6 firm-hero-video-text">
+                <h6 class="my-4" style="font-family: 'Faktum-wide-bold'; font-size: 18px;color: #000;">
+                    DIVERSITY, EQUITY, & INCLUSION</h6>
+                <p style="line-height: 1.4;">GTIS is committed to fostering, cultivating and preserving a culture of
+                    diversity, equity and
+                    inclusion. Our human capital is the most valuable asset we have. The collective sum of the
+                    individual differences, life experiences, knowledge and unique capabilities and talent that our
+                    employees invest in their work represents a significant part of our culture, reputation and
+                    achievement.</p>
+            </div>
+            <div class="col-lg-6 esg-hero-photo-3">
+                <img src="https://cdn.sanity.io/images/tvz6muu8/production/87067f64e3df5b4410c46734092dfdee828cefba-2400x2273.jpg?w=3840&q=75&fit=clip&auto=format"
+                    class="img-fluid" style=" border-radius: 10px;" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our Policies -->
+    <div class="container-fluid esg-line-animate position-relative reveal">
+        <div class="row  d-flex  esg-hero-photo-4">
+            <div class="col-lg-6 pe-5 firm-hero-video-text">
+                <p style="font-size: 20px;">Real estate development by definition has a considerable impact on the
+                    environment, the local community and its integration with the surrounding area. It has become
+                    increasingly clear that ESG conscious policies are important not just for the wellbeing of various
+                    stakeholders affected by development projects, but also for asset and fund level performance.
+                    Evidence continues to accumulate that development projects can do well financially while
+                    simultaneously doing good by the environment and the surrounding community.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://cdn.sanity.io/images/tvz6muu8/production/8ec3bbe1403f6620c62c2d68fac93e1e092eb70d-173x116.svg?w=384&q=75&fit=clip&auto=format"
+                    class="img-fluid mt-5" style=" border-radius: 10px;" alt="">
+                <p class="my-4" style="font-family: 'Faktum'; font-size: 38px;color: #000;">Our Policies</p>
+
+                <div class="pb-4 my-4 position-relative esg-ub-lines reveal open_page d-flex  justify-content-between">
+                    <p class="m-0 d-flex align-items-center" style="font-family: 'Faktum'; font-size: 20px;">GTIS
+                        Partners ESG Policy
+                    </p>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+                <div class="pb-4 my-4 position-relative esg-ub-lines reveal open_page d-flex  justify-content-between">
+                    <p class="m-0 d-flex align-items-center" style="font-family: 'Faktum'; font-size: 20px;">GTIS
+                        Partners Corporate Sustainability Report - Brazil
+                    </p>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+                <div class="pb-4 my-4 position-relative esg-ub-lines reveal open_page d-flex  justify-content-between">
+                    <p class="m-0 d-flex align-items-center" style="font-family: 'Faktum'; font-size: 20px;">GTIS
+                        Partners
+                        Corporate Sustainability Report - <br>Qualified Opportunity Fund
+                    </p>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+                <div class="pb-4 my-4 position-relative esg-ub-lines reveal open_page d-flex  justify-content-between">
+                    <p class="m-0 d-flex align-items-center" style="font-family: 'Faktum'; font-size: 20px;">GTIS
+                        Partners
+                        Corporate Sustainability Report - US Income Fund
+                    </p>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Awards & Accolades -->
+    <div class="container-fluid esg-hero-photo-5">
+        <div class="col-12">
+            <img src="https://cdn.sanity.io/images/tvz6muu8/production/97e96094927ed965f66c500b27709935bcda7025-1326x754.jpg?w=2048&q=75&fit=clip&auto=format"
+                class="img-fluid mb-5" style="border-radius: 10px;" alt="">
+        </div>
+        <div class="row px-2 d-flex">
+            <div class="col-lg-5">
+                <p class="mt-lg-4 mt-sm-1 pt-sm-2 mt-0 pt-0 press" style="font-family: 'Faktum';  color: #000;">Awards &
+                    Accolades
+                </p>
+            </div>
+            <div class="col-lg-7 ps-lg-5">
+                <ul class="ps-lg-5 pt-2 p-0">
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2022</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GRESB
+                            REGIONAL SECTOR LEADER, AMERICAS, OFFICE AND A REGIONAL NON-LISTED SECTOR LEADER, AMERICAS,
+                            OFFICE
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">GTIS
+                                Brazil Real Estate Fund I
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="d-flex  gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2021</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">LEED PLATINUM
+                            V4.1 RECERTIFICATION
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">Vista
+                                Faria Lima.
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2021</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">LEED PLATINUM
+                            BD+C CORE AND SHELL
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">DCC
+                            </p>
+                        </a>
+
+                    </li>
+
+                    <li class="d-flex  gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2019</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GOLDEN TROWEL
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">DCC
+                            </p>
+                        </a>
+                    </li>
+                    <li class="d-flex  gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2015</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">GOLDEN TROWEL
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">DCR
+                            </p>
+                        </a>
+                    </li>
+                    <li class="d-flex gap-sm-5 my-4 flex-sm-nowrap flex-wrap">
+                        <p class="mb-sm-3 mb-0" style="font-family: 'king_calson'; font-size: 20px; color: #536476;">
+                            2010</p>
+                        <a class="ms-sm-4 ms-0 my-sm-0 my-2 lh-sm text-decoration-none press-news" href="">LEED GOLD
+                            <p class="mt-sm-1 mt-2 mb-4 text-dark" style="font-family: 'Faktum'; font-size: 20px;">
+                                Infinity</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AUTOPLAY LOGOS -->
+    <div class="marquee m-0 px-5 mt-5 logo-lines reveal">
+        <div class="marquee--inner">
+            <span class="logo-contain">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/543cc2c837524986cd7ea19c0df2dd055a94c364-218x192.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ff0a58f5c107d79bcfa0456b04ea498beb7f9da8-238x123.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/0ad7254c604d9dcbb476507175658eec45cfcaf2-470x172.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/c1f5e18a849374bd3c64f55edc062e7f5b70aae1-500x500.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/543cc2c837524986cd7ea19c0df2dd055a94c364-218x192.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ff0a58f5c107d79bcfa0456b04ea498beb7f9da8-238x123.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/0ad7254c604d9dcbb476507175658eec45cfcaf2-470x172.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/c1f5e18a849374bd3c64f55edc062e7f5b70aae1-500x500.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/543cc2c837524986cd7ea19c0df2dd055a94c364-218x192.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ff0a58f5c107d79bcfa0456b04ea498beb7f9da8-238x123.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/0ad7254c604d9dcbb476507175658eec45cfcaf2-470x172.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/c1f5e18a849374bd3c64f55edc062e7f5b70aae1-500x500.png"
+                    alt="">
+
+            </span>
+            <span class="logo-contain">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/543cc2c837524986cd7ea19c0df2dd055a94c364-218x192.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ff0a58f5c107d79bcfa0456b04ea498beb7f9da8-238x123.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/0ad7254c604d9dcbb476507175658eec45cfcaf2-470x172.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/c1f5e18a849374bd3c64f55edc062e7f5b70aae1-500x500.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/543cc2c837524986cd7ea19c0df2dd055a94c364-218x192.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ff0a58f5c107d79bcfa0456b04ea498beb7f9da8-238x123.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/0ad7254c604d9dcbb476507175658eec45cfcaf2-470x172.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/c1f5e18a849374bd3c64f55edc062e7f5b70aae1-500x500.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/543cc2c837524986cd7ea19c0df2dd055a94c364-218x192.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ff0a58f5c107d79bcfa0456b04ea498beb7f9da8-238x123.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/0ad7254c604d9dcbb476507175658eec45cfcaf2-470x172.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/c1f5e18a849374bd3c64f55edc062e7f5b70aae1-500x500.png"
+                    alt="">
+            </span>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer-pad ">
+        <div class="">
+            <h1 class="footer-heading">Interested in investing or partnering with us?</h1>
+            <a href="" class="my-lg-5 my-4 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
+                Let's talk <img class="img4 pb-1" src="right-arrow.png" width="18rem" alt="">
+            </a>
+        </div>
+
+        <div class="row footer-mid-pad">
+            <div class="col-md-8 gap-4 d-flex flex-wrap">
+                <div class="col-lg-6 col-sm-7 col-12 mb-lg-0 mb-1">
+                    <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">INQUIRIES</h5>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Investor Inquiries</p>
+                        <a href="" style="color: #000;">info@gtispartners.com</a>
+                    </div>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Operating Partner Inquiries</p>
+                        <a href="" style="color: #000;">info@gtispartners.com</a>
+                    </div>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Media Inquiries</p>
+                        <a href="" style="color: #000;">media@gtispartners.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-7 col-10 d-flex ps-lg-1">
+                    <div>
+                        <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">HEADQUARTERS
+                        </h5>
+                        <div class="mb-4" style="font-family: 'Faktum';font-size: 20px;">
+                            <p class="lh-sm">787 Seventh Avenue, 50th Fl
+                                New York, NY 10019</p>
+                        </div>
+                        <div style="font-family: 'Faktum';font-size: 20px;">
+                            <p class="m-0 lh-sm">T: +1 212 220 5200</p>
+                            <p class="lh-sm">F: +1 212 220 5296</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-md-end mt-sm-0 mt-4 pt-sm-0 pt-2">
+                <img src="icon.png" height="260rem" alt="">
+            </div>
+        </div>
+
+        <div class="d-flex gap-sm-5 gap-4 align-items-end footer-last flex-wrap">
+            <div class="pb-1">
+                <img class="logo-img" src="logo-removebg-preview.png" width="220rem" alt="">
+            </div>
+
+            <div class="mt-sm-0 mt-2 d-flex gap-sm-4 gap-3 flex-wrap">
+                <p class="m-0 col-sm-auto col-12 footer-term position-relative"
+                    style="font-family: 'Faktum'; display: inline-block; font-size: 16px; word-spacing: 1px;">Terms of
+                    Use</p>
+                <p class="m-0 ms-sm-2  col-sm-auto col-12  footer-term position-relative"
+                    style="font-family: 'Faktum'; display: inline-block; font-size: 16px;">Privacy</p>
+            </div>
+
+            <div class="mt-sm-0 mt-2 col-sm-auto col-7">
+                <p class="m-0" style="color: #999999; font-family: 'Faktum'; font-size: 16px;">© 2023 GTIS Partners LP.
+                    All
+                    Rights Reserved.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- TOP NAVBAR COLLAPSE -->
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn');
+        const box = document.querySelector('.nav-collapse');
+        const forclose = document.querySelector('.navClose');
+
+        toggleBtn.addEventListener('click', () => {
+            box.classList.toggle('show-nav');
+        });
+        forclose.addEventListener('click', () => {
+            box.classList.remove('show-nav');
+        });
+
+    </script>
+
+
+
+
+    <!-- LINES ANIMATION AFFECT -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementBottom = reveals[i].getBoundingClientRect().bottom;
+                var elementVisible = (windowHeight - elementTop) / windowHeight;
+                if (elementVisible > 0 && elementVisible < 1) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        reveal(); 
+    </script>
+
+
+    <!-- NAVBAR LINES AND ACTIVE -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".firm-team-nav");
+
+        // Show the first section on page load
+        sections[0].style.display = "block";
+
+        navLinks.forEach((a) => {
+            a.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const current = e.target.getAttribute("href").slice(1);
+
+                // Hide all sections
+                sections.forEach((section) => {
+                    section.style.display = "none";
+                });
+
+                // Show the current section
+                document.getElementById(current).style.display = "block";
+
+                // Remove the active class from all links
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
+
+                // Add the active class to the current link
+                e.target.classList.add("active");
+            });
+        });
+
+
+    </script>
+
+</body>
