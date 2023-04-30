@@ -53,7 +53,7 @@
                                 <a class="nav-link px-3" style="color: black;" href="esg.html">ESG</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link px-3" style="color: black;" href="#">Strategies & Portfolio</a>
+                                <a class="nav-link px-3" style="color: black;" href="stragiesPortfolio.html">Strategies & Portfolio</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link px-3" style="color: black;" href="#">Research</a>
@@ -97,7 +97,7 @@
                 <p class="m-0" style="font-size: 18px; font-family: 'Faktum-wide-bold'; color:black;">CURRENT FUND
                     OFFERINGS</p>
             </div>
-            <div class="col-md-6 col-12 open_page d-flex align-items-center justify-content-md-end">
+            <div class="col-md-6 col-12 open_page d-flex pe-sm-3 align-items-center justify-content-md-end">
                 <p class="m-0 d-flex align-items-center" style="font-family: 'Faktum'; font-size: 20px;">GTIS Qualified
                     Opportunity Zone Fund II
                     <i style="color: #536476; font-size: 2.2rem;" class=" ms-3 img2 bi bi-arrow-right-short"></i>
@@ -324,7 +324,7 @@
     <div class="container-fluid">
         <div class="row position-relative  mb-5" style="border-bottom: 1.5px solid #000;">
 
-            <div class="col-md-6 ub-pading">
+            <div class="col-md-6 ub-pading usa-border">
 
                 <div class="d-flex" style="flex-direction: column-reverse;">
                     <h1 class="ub-main-head   position-relative"><i id="dot-animate" class="fs-3 bi bi-circle-fill"></i>
@@ -518,13 +518,13 @@
     <div class="marquee m-0 px-5 mt-5 logo-lines reveal">
         <div class="marquee--inner">
             <span class="logo-contain">
-                <img class="logo"
+                <img class="logo d-none d-sm-block"
                     src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
                     alt="">
-                <img class="logo"
+                <img class="logo d-none d-sm-block"
                     src="https://cdn.sanity.io/images/tvz6muu8/production/ad62401ac88b3447eaefc08066b7a765a0edd142-500x43.png"
                     alt="">
-                <img class="logo"
+                <img class="logo "
                     src="https://cdn.sanity.io/images/tvz6muu8/production/a67056b7a5a8b2cb7ecb91610d1f6cecb7d3f7fa-500x220.png"
                     alt="">
                 <img class="logo"
@@ -697,7 +697,7 @@
 
 
     <script>
-
+        
         const toggleBtn = document.getElementById('toggle-btn');
         const box = document.querySelector('.nav-collapse');
         const forclose = document.querySelector('.navClose');
@@ -721,7 +721,7 @@
                 var windowHeight = window.innerHeight;
                 var elementTop = reveals[i].getBoundingClientRect().top;
                 var elementBottom = reveals[i].getBoundingClientRect().bottom;
-                var elementVisible = (windowHeight - elementTop) / windowHeight;
+                var elementVisible = (windowHeight - elementBottom) / windowHeight;
                 if (elementVisible > 0 && elementVisible < 1) {
                     reveals[i].classList.add("active");
                 } else {
