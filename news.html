@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link href="index.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>NEWS | GTIS Partners</title>
+</head>
+
+<body>
+    <!-- TOP MAIN NAVABR -->
+    <div class="container-fluid g-0 ">
+        <div class="d-flex ps-lg-5 px-md-4 px-0 position-relative"
+            style="border-bottom: 0.8px solid black; width: 100%;">
+            <nav class="px-2 navbar navbar-expand-lg navbar-light w-100 " style="height: 59px;">
+                <div class="container-fluid w-100 d-flex justify-content-between ">
+
+                    <a class="navbar-brand ps-0 " href="index.html" style="z-index: 10;">
+                        <img src="logo-removebg-preview.png" class="mb-1" width="220rem" alt="">
+                    </a>
+                    <button class="navbar-toggler ms-auto" style="z-index: 10;" id="toggle-btn" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="fs-1 bi-list" id="toggle-icon"></span> -->
+                    </button>
+
+                    <div class="collapse navbar-collapse ps-0 nav-collapse " style="z-index: 5;" id="navbarNav">
+                        <ul class="navbar-nav  nav-top mt-1" style="font-family: 'Faktum';font-size: 1rem;">
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="firm.html">Firm</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="esg.html">ESG</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="stragiesPortfolio.html">Strategies
+                                    & Portfolio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-3" style="color: black;" href="#">Client Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- AUTOPLAY LOGOS -->
+    <div class="marquee-news m-0 px-5 mt-5 ">
+        <div class="marquee--inner">
+            <span class="logo-contain">
+                <img class="logo d-none d-sm-block"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
+                    alt="">
+                <img class="logo "
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/a67056b7a5a8b2cb7ecb91610d1f6cecb7d3f7fa-500x220.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ae4dea1194c2d39b662e127f9b52cdccd5d90b2b-500x93.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/28afa5348b6f50539fb2f8dca4058c67d399fe1a-500x78.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
+                    alt="">
+                <img class="logo d-none d-sm-block"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ad62401ac88b3447eaefc08066b7a765a0edd142-500x43.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ae4dea1194c2d39b662e127f9b52cdccd5d90b2b-500x93.png"
+                    alt="">
+            </span>
+            <span class="logo-contain">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ad62401ac88b3447eaefc08066b7a765a0edd142-500x43.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/a67056b7a5a8b2cb7ecb91610d1f6cecb7d3f7fa-500x220.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ae4dea1194c2d39b662e127f9b52cdccd5d90b2b-500x93.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/28afa5348b6f50539fb2f8dca4058c67d399fe1a-500x78.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/bb2c3ba14ae6c3b2c6c2752970bab044667a3bd9-500x68.png"
+                    alt="">
+                <img class="logo"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/ae4dea1194c2d39b662e127f9b52cdccd5d90b2b-500x93.png"
+                    alt="">
+            </span>
+        </div>
+    </div>
+
+
+    <!-- YEARS -->
+    <div class="container-fluid mb-5">
+        <h5 class="ms-5" style="font-family: 'Faktum-wide-bold';color: #000; font-size: 18px;">ARCHIVE</h5>
+        <div class="d-flex news-year ms-3 ps-1 ">
+            <a class=" mt-3 mx-4 text-decoration-none active  position-relative news-nav" href="#2023">
+                <h4 class="" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2023</h4>
+            </a>
+            <a class="text-decoration-none" href="#2022">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2022</h4>
+            </a>
+            <a class="text-decoration-none" href="#2021">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2021</h4>
+            </a>
+            <a class="text-decoration-none" href="#2020">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2020</h4>
+            </a>
+            <a class="text-decoration-none" href="#2019">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2019</h4>
+            </a>
+            <a class="text-decoration-none" href="#2018">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2018</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2017</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2016</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2015</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2014</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2013</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2012</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2011</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2010</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2009</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2008</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2007</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2006</h4>
+            </a>
+            <a class="text-decoration-none" href="">
+                <h4 class="mt-3 mx-4" style="font-family: 'king_calson';color: #536476; font-size: 20px;">2005</h4>
+            </a>
+        </div>
+    </div>
+
+    <!-- NEWS CONTENT -->
+    <div class="container-fluid">
+        <!-- SETION 2023 -->
+        <section id="2023">
+            <div class="new-pad">
+                <div
+                    class="position-relative ub-lines reveal d-flex justify-content-between align-items-center open_page pb-4 my-4">
+                    <i id="small-dot-animate-news" style="font-size: 14px;" class="bi bi-circle-fill"></i>
+                    <div class="d-flex g-0 small-head">
+                        <p class=" mt-1 mb-0" style="font-family: 'king_calson';font-size: 20px;">04.06.23</p>
+                        <div class="d-flex ms-5 ps-2 align-items-center">
+                            <p class=" m-0" style="font-family: 'Faktum';font-size: 20px;">Multi-Housing News</p>
+                            <p class=" mb-0 mt-1 ms-4 ps-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">
+                                GTIS
+                                BTR SUBSIDIARY DEBUTS FIRST PROPERTY</p>
+                        </div>
+                    </div>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+
+                <div
+                    class="position-relative ub-lines reveal d-flex justify-content-between align-items-center open_page pb-4 my-4">
+                    <i id="small-dot-animate-news" style="font-size: 14px;" class="bi bi-circle-fill"></i>
+                    <div class="d-flex g-0 small-head">
+
+                        <p class=" mt-1 mb-0" style="font-family: 'king_calson';font-size: 20px;">04.04.23</p>
+
+                        <div class="d-flex ms-5 ps-2 gap-5">
+                            <p class=" m-0" style="font-family: 'Faktum';font-size: 20px;">PR Newswire</p>
+                            <p class="ms-4 ps-4 mb-0 mt-1" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">
+                                GTIS
+                                PARTNERS LAUNCHES BUILD-TO-RENT
+                                COMMUNITY<br> DEVELOPMENT COMPANY TAVALO</p>
+                        </div>
+                    </div>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+                <div
+                    class="position-relative ub-lines reveal d-flex justify-content-between align-items-center open_page pb-4 my-4">
+                    <i id="small-dot-animate-news" style="font-size: 14px;" class="bi bi-circle-fill"></i>
+                    <div class="d-flex g-0 small-head">
+
+                        <p class=" mt-1 mb-0" style="font-family: 'king_calson';font-size: 20px;">03.16.23</p>
+
+                        <div class="d-flex ms-5 ps-2 gap-5">
+                            <p class=" m-0 me-2" style="font-family: 'Faktum';font-size: 20px;">CNBC</p>
+                            <p class=" mb-0 mt-1 ms-5 ps-5" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">
+                                CLOSING BELL: OVERTIME - COST OF KEEPING A TENANT HAS GONE UP<br> DRAMATICALLY, SAYS
+                                GTIS’S
+                                TOM SHAPIRO</p>
+                        </div>
+                    </div>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+                <div
+                    class="position-relative ub-lines reveal d-flex justify-content-between align-items-center open_page pb-4 my-4">
+                    <i id="small-dot-animate-news" style="font-size: 14px;" class="bi bi-circle-fill"></i>
+                    <div class="d-flex g-0 small-head">
+
+                        <p class=" mt-1 mb-0" style="font-family: 'king_calson';font-size: 20px;">03.02.23</p>
+
+                        <div class="d-flex ms-5 ps-2 gap-5">
+                            <p class=" m-0" style="font-family: 'Faktum';font-size: 20px;">PR Nwqawirwe</p>
+                            <p class="ms-4  mb-0 mt-1" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">GTIS
+                                PARTNERS COMPLETES LAND SALES IN CALIFORNIA AND ARIZONA</p>
+                        </div>
+                    </div>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+
+                <div
+                    class="position-relative ub-lines reveal d-flex justify-content-between align-items-center open_page pb-4 my-4">
+                    <i id="small-dot-animate-news" style="font-size: 14px;" class="bi bi-circle-fill"></i>
+                    <div class="d-flex g-0 small-head">
+
+                        <p class=" mt-1 mb-0" style="font-family: 'king_calson';font-size: 20px;">02.16.23</p>
+
+                        <div class="d-flex ms-5 ps-2 gap-5">
+                            <p class=" m-0" style="font-family: 'Faktum';font-size: 20px;">Bloomberg</p>
+                            <p class="ms-5 ps-2 mb-0 mt-1" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">
+                                BALANCE OF POWER - TOM SHAPIRO INTERVIEW - BEGINNING AT 25<br> MINUTES</p>
+                        </div>
+                    </div>
+                    <a href="#" class=""><img class="img2 pb-1" src="right-arrow.png" width="18rem" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer-pad footer-border-animate position-relative reveal">
+        <div class="">
+            <h1 class="footer-heading">Interested in investing or partnering with us?</h1>
+            <a href="" class="my-lg-5 my-4 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
+                Let's talk <img class="img4 pb-1" src="right-arrow.png" width="18rem" alt="">
+            </a>
+        </div>
+
+        <div class="row footer-mid-pad">
+            <div class="col-md-8 gap-4 d-flex flex-wrap">
+                <div class="col-lg-6 col-sm-7 col-12 mb-lg-0 mb-1">
+                    <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">INQUIRIES</h5>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Investor Inquiries</p>
+                        <a href="" style="color: #000;">info@gtispartners.com</a>
+                    </div>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Operating Partner Inquiries</p>
+                        <a href="" style="color: #000;">info@gtispartners.com</a>
+                    </div>
+                    <div class="mb-3" style="font-family: 'Faktum';font-size: 20px;">
+                        <p class="m-0 lh-sm">Media Inquiries</p>
+                        <a href="" style="color: #000;">media@gtispartners.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-7 col-10 d-flex ps-lg-1">
+                    <div>
+                        <h5 class="mb-4 pb-2" style="font-family: 'Faktum-wide-bold'; font-size: 18px;">HEADQUARTERS
+                        </h5>
+                        <div class="mb-4" style="font-family: 'Faktum';font-size: 20px;">
+                            <p class="lh-sm">787 Seventh Avenue, 50th Fl
+                                New York, NY 10019</p>
+                        </div>
+                        <div style="font-family: 'Faktum';font-size: 20px;">
+                            <p class="m-0 lh-sm">T: +1 212 220 5200</p>
+                            <p class="lh-sm">F: +1 212 220 5296</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-md-end mt-sm-0 mt-4 pt-sm-0 pt-2">
+                <img src="icon.png" height="260rem" alt="">
+            </div>
+        </div>
+
+        <div class="d-flex gap-sm-5 gap-4 align-items-end footer-last flex-wrap">
+            <div class="pb-1">
+                <img class="logo-img" src="logo-removebg-preview.png" width="220rem" alt="">
+            </div>
+
+            <div class="mt-sm-0 mt-2 d-flex gap-sm-4 gap-3 flex-wrap">
+                <p class="m-0 col-sm-auto col-12 footer-term position-relative"
+                    style="font-family: 'Faktum'; display: inline-block; font-size: 16px; word-spacing: 1px;">Terms of
+                    Use</p>
+                <p class="m-0 ms-sm-2  col-sm-auto col-12  footer-term position-relative"
+                    style="font-family: 'Faktum'; display: inline-block; font-size: 16px;">Privacy</p>
+            </div>
+
+            <div class="mt-sm-0 mt-2 col-sm-auto col-7">
+                <p class="m-0" style="color: #999999; font-family: 'Faktum'; font-size: 16px;">© 2023 GTIS Partners LP.
+                    All
+                    Rights Reserved.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn');
+        const box = document.querySelector('.nav-collapse');
+        const forclose = document.querySelector('.navClose');
+
+        toggleBtn.addEventListener('click', () => {
+            box.classList.toggle('show-nav');
+        });
+        forclose.addEventListener('click', () => {
+            box.classList.remove('show-nav');
+        });
+
+    </script>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementBottom = reveals[i].getBoundingClientRect().bottom;
+                var elementVisible = (windowHeight - elementTop) / windowHeight;
+                if (elementVisible > 0 && elementVisible < 1) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        reveal(); 
+    </script>
+    <!-- BOXES CAROUSEL -->
+    <script>
+        $(document).ready(function () {
+            $('#myCarousel').owlCarousel({
+                items: 1,
+                loop: true,
+                // margin: 10,
+                autoplay: false,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    992: {
+                        items: 1
+                    },
+                    1200: {
+                        items: 1,
+                        loop: true,
+                        autoplay: false,
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".news-nav");
+
+        // Show the first section on page load
+        sections[0].style.display = "block";
+
+        navLinks.forEach((a) => {
+            a.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const current = e.target.getAttribute("href").slice(1);
+
+                // Hide all sections
+                sections.forEach((section) => {
+                    section.style.display = "none";
+                });
+
+                // Show the current section
+                document.getElementById(current).style.display = "block";
+
+                // Remove the active class from all links
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
+
+                // Add the active class to the current link
+                e.target.classList.add("active");
+            });
+        });
+
+
+    </script>
+</body>

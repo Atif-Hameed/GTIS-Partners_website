@@ -22,6 +22,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <style>
 
+
+
   </style>
 
 </head>
@@ -29,66 +31,109 @@
 <body>
 
   <h1>hello</h1>
+ 
+  
+	<div class="number-line d-flex" style="overflow-x: scroll;">
+		<h1 class="mx-5">1</h1>
+		<h1 class="mx-5">2</h1>
+		<h1 class="mx-5">3</h1>
+		<h1 class="mx-5">4</h1>
+		<h1 class="mx-5">5</h1>
+		<h1 class="mx-5">6</h1>
+		<h1 class="mx-5">7</h1>
+		<h1 class="mx-5">8</h1>
+		<h1 class="mx-5">9</h1>
+		<h1 class="mx-5">10<h1>
+		<h1 class="mx-5">1</h1>
+		<h1 class="mx-5">2</h1>
+		<h1 class="mx-5">3</h1>
+		<h1 class="mx-5">4</h1>
+		<h1 class="mx-5">5</h1>
+		<h1 class="mx-5">6</h1>
+		<h1 class="mx-5">7</h1>
+		<h1 class="mx-5">8</h1>
+		<h1 class="mx-5">9</h1>
+		<h1 class="mx-5">10<h1>
+		<h1 class="mx-5">1</h1>
+		<h1 class="mx-5">2</h1>
+		<h1 class="mx-5">3</h1>
+		<h1 class="mx-5">4</h1>
+		<h1 class="mx-5">5</h1>
+		<h1 class="mx-5">6</h1>
+		<h1 class="mx-5">7</h1>
+		<h1 class="mx-5">8</h1>
+		<h1 class="mx-5">9</h1>
+		<h1 class="mx-5">10<h1>
+	 
+	</div>
 
-  <div class=" owl-carousel owl-theme">
-    <div class="item" style="background-color: aqua;">
-      <h4>1</h4>
-    </div>
-    <div class="item" style="background-color: red;">
-      <h4>2</h4>
-    </div>
-    <div class="item"style="background-color: yellow;">
-      <h4>3</h4>
-    </div>
-    <div class="item"style="background-color: blue;">
-      <h4>4</h4>
-    </div>
-    <div class="item"style="background-color: brown;">
-      <h4>5</h4>
-    </div>
-    <div class="item"style="background-color: purple;">
-      <h4>6</h4>
-    </div>
-    <div class="item"style="background-color: orange;">
-      <h4>7</h4>
-    </div>
-    <div class="item"style="background-color: green">
-      <h4>8</h4>
-    </div>
-    <div class="item"style="background-color: brown">
-      <h4>9</h4>
-    </div>
-    <div class="item"style="background-color: skyblue">
-      <h4>10</h4>
-    </div>
-    <div class="item"style="background-color: pink">
-      <h4>11</h4>
-    </div>
-    <div class="item"style="background-color: red">
-      <h4>12</h4>
-    </div>
+  <div class="scroll-btns">
+	<button id="prev-btn">Prev</button>
+	<button id="next-btn">Next</button>
   </div>
+  
 
 
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      center:true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 5
-        }
-      }
-    })
-  </script>
+
+  <!-- <div class="owl-carousel testimonial-carousel">
+    <div class="item">
+      <div class="testimonial bg-danger">
+        <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum, turpis eu dignissim dapibus, lacus justo pellentesque sapien, ac bibendum nunc nibh non arcu."</p>
+        <p class="author">- John Doe</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="testimonial bg-warning">
+        <p class="quote">"Fusce eget enim eu risus faucibus scelerisque. Praesent ultricies augue vel diam tempor auctor. Nulla facilisi."</p>
+        <p class="author">- Jane Doe</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="testimonial bg-success">
+        <p class="quote">"Integer accumsan libero vel nibh aliquam, at pulvinar nulla consequat. Donec lacinia, quam sed faucibus consectetur, dolor libero viverra eros."</p>
+        <p class="author">- Bob Smith</p>
+      </div>
+    </div>
+  </div> -->
+  
+<!-- <div class="owl-carousel owl-theme">
+  <div class="item"><h4>1</h4></div>
+  <div class="item"><h4>2</h4></div>
+  <div class="item"><h4>3</h4></div>
+  <div class="item"><h4>4</h4></div>
+  <div class="item"><h4>5</h4></div>
+  <div class="item"><h4>6</h4></div>
+  <div class="item"><h4>7</h4></div>
+  <div class="item"><h4>8</h4></div>
+  <div class="item"><h4>9</h4></div>
+  <div class="item"><h4>10</h4></div>
+  <div class="item"><h4>11</h4></div>
+  <div class="item"><h4>12</h4></div>
+</div> -->
+
+
+<!-- <script>
+ $('.testimonial-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 2
+    }
+  }
+});
+
+</script> -->
 
   <!-- <script>
 function reveal() {
@@ -158,8 +203,23 @@ window.addEventListener("scroll", () => {
 
 </script> -->
 
+<script>
+const numberLine = document.querySelector('.number-line');
+const prevBtn = document.querySelector('#prev-btn');
+const nextBtn = document.querySelector('#next-btn');
 
+const scrollAmount = 300; // adjust this value to control how much the line scrolls per click
 
+prevBtn.addEventListener('click', () => {
+  numberLine.scrollLeft -= scrollAmount;
+});
+
+nextBtn.addEventListener('click', () => {
+  numberLine.scrollLeft += scrollAmount;
+});
+
+</script>
+  
 
 
 

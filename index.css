@@ -45,6 +45,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.upper-main-nav{
+    top: -60px;
+    transition: top 0.3s;
+}
 
 #navbarNav ul li {
     margin-left: 32px;
@@ -359,6 +363,14 @@
     opacity: 0;
     transition: all 0.8s;
 }
+#small-dot-animate-news {
+    position: absolute;
+    color: rgb(75, 93, 96);
+    top: 10%;
+    left: -40px;
+    opacity: 0;
+    transition: all 0.5s;
+}
 
 .ub-main-head:hover {
     padding-left: 50px;
@@ -375,6 +387,10 @@
 }
 
 .open_page:hover #small-dot-animate {
+    opacity: 1;
+    left: 0;
+}
+.open_page:hover #small-dot-animate-news {
     opacity: 1;
     left: 0;
 }
@@ -426,6 +442,17 @@
 
 .marquee {
     height: 120px;
+    width: 100%;
+    /* border-bottom: 1.5px solid #000; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.marquee-news {
+    height: 110px;
     width: 100%;
     /* border-bottom: 1.5px solid #000; */
     border-top: none;
@@ -618,6 +645,23 @@
     background-color: #536476;
     border: #536476;
 }
+.search-btn {
+    background-color: #fff;
+    padding: 13px 25px;
+    width: 18.8rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #000;
+    font-family: 'Faktum';
+    transition: all 0.5s;
+}
+
+.search-btn:hover {
+    color: #fff;
+    border-radius: 70px;
+    background-color: #536476;
+    border: #536476;
+}
 
 .img4 {
     transition: all 0.2s;
@@ -625,6 +669,9 @@
 }
 
 .fooetr-btn:hover .img4 {
+    transform: rotate(360deg);
+}
+.search-btn:hover .img4 {
     transform: rotate(360deg);
 }
 
@@ -706,6 +753,12 @@
 
 /* FIRM CSS */
 .firm-hero {
+    padding: 72px 55px 0 55px;
+}
+.firm-hero-main {
+    padding: 72px 55px 0 55px;
+}
+.firm-hero-search {
     padding: 72px 55px 0 55px;
 }
 
@@ -805,6 +858,10 @@
     position: relative;
 }
 
+/* .news-year li{
+    position: relative;
+} */
+
 .firm-team-nav::after {
     position: absolute;
     content: "";
@@ -820,9 +877,31 @@
 .firm-team-nav.active::after{
     width: 100%;
 }
+
+.news-nav::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s;
+}
+
+.news-nav.active::after{
+    width: 100%;
+}
+
 section{
     display: none;
 }
+
+
+/* .firm-carousel-year{
+    margin: 0 5rem;
+} */
 
 /* .scroll-container {
     position: relative;
@@ -950,6 +1029,201 @@ section{
 .usa-border{
     border-right: 1px solid black;
 }
+.esg-build-head{
+    font-size: 68px;
+}
+.search-main-head h1{
+    font-size: 8.2rem;
+    color: #000;
+    line-height: 0.85;
+}
+.research-head{
+    margin-left: 7.2rem;
+}
+
+.firm-hero-search {
+    padding: 72px 55px 0px 55px;
+}
+.firm-hero-search-2 {
+    padding: 0px 55px 72px 55px;
+}
+.search-text-pad{
+    padding: 72px 24px 0 14px;
+}
+.load-search{
+    display: none;
+}
+.show.load-search{
+    display: block;
+}
+.register-search-btn{
+    margin: 4rem 0 2.5rem 0;
+}
+.footer-border-animate::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    border-top: 1.5px solid #000;
+    transition: all 1.5s;
+}
+
+.footer-border-animate.active:before {
+    width: 100%;
+}
+.search-text{
+    font-size: 28px;
+}
+.explor-search{
+    font-size: 38px;
+}
+.news-year{
+    overflow-x: scroll;
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.news-year::-webkit-scrollbar{
+    display: none;
+}
+.new-pad{
+    padding: 0 45px;
+}
+
+.firm-carousel-container-parent{
+    margin-bottom: 6rem;
+    padding-top: 1.88rem;
+    padding-left:54px;
+}
+
+.firm-carousel-main-container{
+    height: 354px;
+    overflow-x: scroll; 
+    overflow-y:hidden;    
+    position: relative;
+    transition: scroll 0.3s ease-in-out;
+}
+
+.scroll-btns{
+    position: relative;
+    margin-top: 2rem;
+}
+.scroll-btns #prev-btn{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: border-radius 0.3s ease-in-out;
+    margin-left: 0;
+}
+.scroll-btns #next-btn{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.scroll-btns #next-btn:hover{
+    border-radius: 50px;
+    background-color: #536476;
+    border: none;
+}
+.scroll-btns #next-btn:hover i{
+    color: #fff;
+}
+.scroll-btns #prev-btn:hover{
+    border-radius: 50px;
+    background-color: #536476;
+    border: none;
+}
+.scroll-btns #prev-btn:hover i{
+    color: #fff;
+}
+.firm-carousel-main-container::-webkit-scrollbar{
+    display: none;
+}
+.year-container{
+    height: 3.35rem;
+    background-color: #ecf6f6;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 7rem;
+}
+.year-container-2{
+    background-color: #ecf6f6;
+    width: 9rem;
+    height: 3.35rem;
+    text-align: center;
+}
+.firm-container-carousel{
+    position:relative; 
+    width: 100%;
+    height: 30px;
+    margin-top: 300px;
+}
+.firm-carousel-img{
+    position: absolute;
+    bottom: 110px;
+    height:7.5rem ;
+    left: 65%;
+    transform: translate(-50%,0);
+}
+.firm-line-circle-contain{
+    height: 80px; 
+    position: absolute; 
+    bottom: 10px;
+    left: 65%;
+    transform: translate(-50%,0); 
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firm-carousel-img-2{
+    position: absolute;
+    bottom: 110px;
+    height:7.5rem ;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.firm-line-circle-contain-2{
+    height: 80px; 
+    position: absolute; 
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0); 
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firm-carousel-line{
+    height: 50%; 
+    width: 1px;
+    background-color: black;
+}
+.firm-carousel-circle{
+    position: absolute;
+    top: -10px;
+}
+.card-container{
+    overflow-x: scroll;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+.firm-cards-width{
+    width: 95%;
+    border: 1px solid black; 
+    background-color: #ecf6f6; 
+    border-radius: 15px;
+}
+
+/* .item-owl:nth-child(1){
+    transform: scaleY(2.5);
+} */
 /* XL SIZE */
 @media screen and (max-width: 1150px) {
     #navbarNav ul li {
@@ -1122,7 +1396,7 @@ section{
         width: 100%;
     }
     .firm-hero-text {
-        margin-bottom: 72px;
+        margin-bottom: 50px;
         font-size: 34px;
         line-height: 1.12;
     }
@@ -1133,6 +1407,9 @@ section{
     }
     .firm-hero {
         padding: 72px 32px 0 32px;
+    }
+    .firm-hero-main {
+        padding: 40px 22px;
     }
     .firm-hero-video-text p {
         margin-bottom: 5px;
@@ -1151,7 +1428,8 @@ section{
     }
     .firm-client-img{
         border-radius: 10px;
-        height: 15rem;
+        height: auto;
+        width: 100%;
     }
     .esg-hero-photo{
         padding: 10px;
@@ -1168,6 +1446,30 @@ section{
     .esg-hero-photo-5{
         padding: 17px;
     }
+    .search-main-head h1{
+        font-size: 4.5rem;
+        color: #000;
+        line-height: 0.85;
+    }
+    .research-head{
+        margin-left: 3.9rem;
+    }
+    .firm-hero-search {
+        padding: 54px 32px 0 32px;
+    }
+    .firm-hero-search-2 {
+        padding: 0 32px 72px 32px;
+    }
+    .search-text{
+        font-size: 22px;
+    }
+    
+    .firm-carousel-container-parent{
+        margin-bottom: 6rem;
+        padding-top: 1.88rem;
+        padding-left:32px;
+    }
+    
 }
 
 /* SMALL SIZE */
@@ -1334,5 +1636,32 @@ section{
     }
     .usa-border{
         border-right: none;
+    }
+    .search-main-head h1{
+        font-size: 2.8rem;
+        color: #000;
+        line-height: 0.85;
+    }
+    .research-head{
+        margin-left: 2.5rem;
+    }
+    .firm-hero-search {
+        padding: 44px 22px 0 22px;
+    }
+    .firm-hero-search-2 {
+        padding: 0 22px 78px 22px;
+    }
+    .search-text-pad{
+        padding: 0px 10px 0 14px;
+    }
+    .register-search-btn{
+        margin: 2.8rem 0 2rem 0;
+    }
+    .explor-search{
+        margin: 4rem 0 3rem;
+        font-size: 32px;
+    }
+    .firm-cards-width{
+        width: 100%;
     }
 }

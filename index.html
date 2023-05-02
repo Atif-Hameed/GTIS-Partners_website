@@ -29,7 +29,7 @@
 
     <!-- TOP MAIN NAVABR -->
     <div class="container-fluid g-0 ">
-        <div class="d-flex ps-lg-5 px-md-4 px-0 position-relative"
+        <div class="d-flex ps-lg-5 px-md-4 px-0 position-relative upper-main-nav "
             style="border-bottom: 0.8px solid black; width: 100%;">
             <nav class="px-2 navbar navbar-expand-lg navbar-light w-100 " style="height: 59px;">
                 <div class="container-fluid w-100 d-flex justify-content-between ">
@@ -56,10 +56,10 @@
                                 <a class="nav-link px-3" style="color: black;" href="stragiesPortfolio.html">Strategies & Portfolio</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link px-3" style="color: black;" href="#">Research</a>
+                                <a class="nav-link px-3" style="color: black;" href="research.html">Research</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link px-3" style="color: black;" href="#">News</a>
+                                <a class="nav-link px-3" style="color: black;" href="news.html">News</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link px-3" style="color: black;" href="#">Contact</a>
@@ -623,8 +623,8 @@
     </div>
 
 
-    <!-- FOOTER -->
-    <div class="container-fluid footer-pad building-line reveal position-relative">
+     <!-- FOOTER -->
+     <div class="container-fluid footer-pad footer-border-animate position-relative reveal">
         <div class="">
             <h1 class="footer-heading">Interested in investing or partnering with us?</h1>
             <a href="" class="my-lg-5 my-4 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
@@ -697,7 +697,7 @@
 
 
     <script>
-        
+
         const toggleBtn = document.getElementById('toggle-btn');
         const box = document.querySelector('.nav-collapse');
         const forclose = document.querySelector('.navClose');
@@ -714,25 +714,25 @@
 
 
 
-    <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementBottom = reveals[i].getBoundingClientRect().bottom;
-                var elementVisible = (windowHeight - elementBottom) / windowHeight;
-                if (elementVisible > 0 && elementVisible < 1) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementBottom = reveals[i].getBoundingClientRect().bottom;
+            var elementVisible = (windowHeight - elementTop) / windowHeight;
+            if (elementVisible > 0 && elementVisible < 1) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
             }
         }
+    }
 
-        window.addEventListener("scroll", reveal);
-        reveal(); 
-    </script>
+    window.addEventListener("scroll", reveal);
+    reveal(); 
+</script>
 
 
 
@@ -762,6 +762,20 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".upper-main-nav").style.top = "0";
+  } else {
+    document.querySelector(".upper-main-nav").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
     </script>
 
 
