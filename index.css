@@ -45,10 +45,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.upper-main-nav{
-    top: -60px;
-    transition: top 0.3s;
-}
+
 
 #navbarNav ul li {
     margin-left: 32px;
@@ -750,6 +747,12 @@
 .footer-mid-pad {
     margin-top: 9.7rem;
 }
+.footer-mid-pad-3 {
+    margin-top: 6.3rem;
+}
+.footer-mid-pad-2 {
+    margin-top: 0;
+}
 
 /* FIRM CSS */
 .firm-hero {
@@ -843,7 +846,7 @@
 }
 
 .firm-team-pad {
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .firm-team-pad-2 {
@@ -883,7 +886,7 @@
     content: "";
     display: block;
     height: 4px;
-    width: 100%;
+    width: 0;
     bottom: 0;
     left: 0;
     background-color: #000;
@@ -1079,6 +1082,7 @@ section{
     font-size: 38px;
 }
 .news-year{
+    margin: 0 20px;
     overflow-x: scroll;
     scrollbar-width: none;
   -ms-overflow-style: none;
@@ -1087,7 +1091,7 @@ section{
     display: none;
 }
 .new-pad{
-    padding: 0 45px;
+    padding: 0 55px;
 }
 
 .firm-carousel-container-parent{
@@ -1220,6 +1224,39 @@ section{
     background-color: #ecf6f6; 
     border-radius: 15px;
 }
+.news-short-heading{
+    width: 21%;
+}
+
+.contact-main{
+    padding: 84px 55px;
+}
+.contact-last{
+    margin-top: 5rem;
+}
+.contact-child-1{
+    padding-right: 150px;
+    padding-left: 20px;
+}
+.contact-office{
+    font-size: 38px;
+}
+.contact-child-2{
+    /* padding-right: 150px;
+    padding-left: 10px; */
+    margin-top: 5.6rem;
+}
+.logIn-bg{
+    background: url('https://investorbridge-public.s3.amazonaws.com/production/453/x8Z7vJBTrCuXSJPl2pZn_Infinity%20Landing%20Page%20Portal.jpg');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+}
+.login-form-contain{
+    margin: 1.9rem 6.76rem;
+}
 
 /* .item-owl:nth-child(1){
     transform: scaleY(2.5);
@@ -1268,6 +1305,32 @@ section{
 
 /* Middle Size */
 @media screen and (max-width: 770px) {
+    .contact-child-2{
+        padding-left: 20px;
+        margin-top: 5rem;
+    }
+    .contact-last{
+        margin-top: 4rem;
+    }
+    .contact-office{
+        font-size: 31px;
+    }
+    .contact-child-1{
+        padding-right: 150px;
+        padding-left: 10px;
+    }
+    .contact-main{
+        padding: 64px 32px;
+    }
+    .news-short-heading{
+        width: 100%;
+    }
+    .new-pad{
+        padding: 0 22px;
+    }
+    .small-head {
+        flex-wrap: wrap;  
+    }
     .nav-collapse {
         background-color: #ecf6f6;
         position: absolute;
@@ -1469,12 +1532,33 @@ section{
         padding-top: 1.88rem;
         padding-left:32px;
     }
+    .marquee-news {
+        height: 80px;
+        width: 100%;
+    }
     
 }
 
 /* SMALL SIZE */
 @media screen and (max-width: 576px) {
-
+    .contact-child-2{
+        padding-left: 0px;
+    }
+    .map-img{
+        width: 100%;
+        height: 200px;
+    }
+    .contact-child-1{
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+    .marquee-news {
+        height: 60px;
+        width: 100%;
+    }
+    .news-year{
+        margin: 0;
+    }
     .hero {
         padding-bottom: 99.80%;
     }
@@ -1575,6 +1659,9 @@ section{
     .footer-mid-pad {
         margin-top: 1.9rem;
     }
+    .footer-mid-pad-3 {
+        margin-top: 0.5rem;
+    }
 
     .logo-img {
         width: 13rem;
@@ -1663,5 +1750,13 @@ section{
     }
     .firm-cards-width{
         width: 100%;
+    }
+    .firm-carousel-container-parent{
+        margin-bottom: 3.4rem;
+        padding-top: 1px;
+        padding-left:22px;
+    }
+    .contact-main{
+        padding: 40px 22px;
     }
 }
