@@ -1255,8 +1255,27 @@ section{
     width: 100%;
 }
 .login-form-contain{
-    margin: 1.9rem 6.76rem;
+    margin-left: 6.4rem;
+    margin-top: 1.9rem;
 }
+.form-pad{
+    padding: 20px 20px 15px 20px;
+    width: 71.5%;
+}
+.login-foot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5.1rem;
+}
+input::placeholder {
+    font-size: 13px;
+  }
+  .login-foot-last p{
+    padding: 0 33.5px;
+    border-right: 1px solid #fff;
+  }
+  
 
 /* .item-owl:nth-child(1){
     transform: scaleY(2.5);
@@ -1305,6 +1324,10 @@ section{
 
 /* Middle Size */
 @media screen and (max-width: 770px) {
+    .login-form-contain{
+        width: 56%;
+        margin-left: 0.7rem;
+    }
     .contact-child-2{
         padding-left: 20px;
         margin-top: 5rem;
@@ -1541,6 +1564,22 @@ section{
 
 /* SMALL SIZE */
 @media screen and (max-width: 576px) {
+    .login-foot-last p{
+        padding: 0 33.5px;
+        border-bottom: 1px solid #fff;
+        border-right: none;
+        margin-right: 1.3rem;
+        margin-left: 1.3rem;
+      }
+    .form-pad{
+        width: 100%;
+    }
+    .login-foot{
+        height: 8.2rem;
+    }
+    .login-form-contain{
+        width: 79%;
+    }
     .contact-child-2{
         padding-left: 0px;
     }
