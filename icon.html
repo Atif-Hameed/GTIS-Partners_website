@@ -20,10 +20,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="path/to/silk-carousel.css">
+  <script src="path/to/silk-carousel.js"></script>
+    
   <style>
-
-
-
+  
+  
   </style>
 
 </head>
@@ -31,200 +33,283 @@
 <body>
 
   <h1>hello</h1>
- 
   
-	<div class="number-line d-flex" style="overflow-x: scroll;">
-		<h1 class="mx-5">1</h1>
-		<h1 class="mx-5">2</h1>
-		<h1 class="mx-5">3</h1>
-		<h1 class="mx-5">4</h1>
-		<h1 class="mx-5">5</h1>
-		<h1 class="mx-5">6</h1>
-		<h1 class="mx-5">7</h1>
-		<h1 class="mx-5">8</h1>
-		<h1 class="mx-5">9</h1>
-		<h1 class="mx-5">10<h1>
-		<h1 class="mx-5">1</h1>
-		<h1 class="mx-5">2</h1>
-		<h1 class="mx-5">3</h1>
-		<h1 class="mx-5">4</h1>
-		<h1 class="mx-5">5</h1>
-		<h1 class="mx-5">6</h1>
-		<h1 class="mx-5">7</h1>
-		<h1 class="mx-5">8</h1>
-		<h1 class="mx-5">9</h1>
-		<h1 class="mx-5">10<h1>
-		<h1 class="mx-5">1</h1>
-		<h1 class="mx-5">2</h1>
-		<h1 class="mx-5">3</h1>
-		<h1 class="mx-5">4</h1>
-		<h1 class="mx-5">5</h1>
-		<h1 class="mx-5">6</h1>
-		<h1 class="mx-5">7</h1>
-		<h1 class="mx-5">8</h1>
-		<h1 class="mx-5">9</h1>
-		<h1 class="mx-5">10<h1>
-	 
-	</div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#team-1">Link-1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#team-2">Link-2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#team-3">Link-3</a>
+    </li>
+    
+  </ul>
+  
 
-  <div class="scroll-btns">
-	<button id="prev-btn">Prev</button>
-	<button id="next-btn">Next</button>
+  <section class="" id="team-1">
+    
+    <img src="https://cdn.sanity.io/images/tvz6muu8/production/ad5762e89724fd981b03c79ddf3a374acf6b745b-514x514.jpg?w=1080&h=1080&fit=crop&auto=format"
+    class="img-fluid firm-team-img" alt="">
+</section>
+  
+
+<section class="" id="team-2">
+  <div class="row firm-team-pad d-flex justify-content-between">
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">JONATHAN
+                      SNIDER
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Managing Director,
+                      Chief Financial Officer</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/6c4baf1e41e78800e1e13d0269cfe3aa0f730dab-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      DAVID PAHL
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Managing Director, US
+                      Income Investments</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/c3d598e7effd9615b673c8700a72ff1901bb08a7-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      THEODORE KARATZ
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Managing Director, US
+                      Acquisitions</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/e81c83cea4b6030e3b90da263a61cd68865b10db-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      AMIT RIND
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Managing Director, US
+                      Acquisitions</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/01b4b7be97dcd73bbaec10d680bef2a53c8170f7-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
   </div>
-  
 
 
 
-  <!-- <div class="owl-carousel testimonial-carousel">
-    <div class="item">
-      <div class="testimonial bg-danger">
-        <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum, turpis eu dignissim dapibus, lacus justo pellentesque sapien, ac bibendum nunc nibh non arcu."</p>
-        <p class="author">- John Doe</p>
+  <div class="row firm-team-pad-2 d-flex justify-content-between">
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      THOMAS BLAIR
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Managing Director, Head
+                      of Portfolio Management</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/9fc469f42485a02c82a95051bde313fe9c749aa9-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="testimonial bg-warning">
-        <p class="quote">"Fusce eget enim eu risus faucibus scelerisque. Praesent ultricies augue vel diam tempor auctor. Nulla facilisi."</p>
-        <p class="author">- Jane Doe</p>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      GAURAV SAHAY
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Managing Director</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/19c2408a762095734821d5e5ca238b1157fa1cef-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="testimonial bg-success">
-        <p class="quote">"Integer accumsan libero vel nibh aliquam, at pulvinar nulla consequat. Donec lacinia, quam sed faucibus consectetur, dolor libero viverra eros."</p>
-        <p class="author">- Bob Smith</p>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      ALLISON SOREN
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director, Chief
+                      Compliance Officer, Head of Human Resources</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/30dda6cc6d6ba02207c45e6d9714e3cb6b088ea6-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
       </div>
-    </div>
-  </div> -->
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      SCOTT BORDOGNA
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director, Head
+                      of Asset Management</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/6b57b4988d705c02ee34b11ddd71eaba57db745b-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="" id="team-3">
+  <div class="row firm-team-pad d-flex justify-content-between">
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">AUDREANE
+                      DE IASI
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director of
+                      Design and Construction</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/a98c7f6a7a85f4cc973d2a67acc2a7d9ffe31a70-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      TARIK MARUNO
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director,
+                      Business Development</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/f7b716ec830526f912f77eba963bb327adfbf2dd-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      PAULO MILLEN
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director, Asset
+                      Management</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/c8e28f9fb25427a03d307dd6b73f5e8fb9312fb0-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      BEATRIZ JARDIM ROSIQUE
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director, Legal
+                  </p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/d3800b8369da75ce30ccb7a952efb1a86605c5f7-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="row firm-team-pad-2 d-flex justify-content-between">
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      PATRICIA DE CAMPOS VALADARES
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Senior Director,
+                      Development & Asset Management</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/d3ace3ed5cb8c2c4b50f4c2b1fab7171949820d2-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      ITAMAR PACHECO
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Director, Compliance
+                      and Risk</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/cbde65ad9946a8c01e1c4e4d61cadceef71baae6-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      MILENA COSTA GOMES
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Director, Design and
+                      Constructions</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/e8579ecc79017bb37debaaa540ff631c25bdce36-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+      <div class="firm-team-member">
+          <div class="d-flex" style="flex-direction: column-reverse;">
+
+              <div class="firm-team-text">
+                  <h4 class="mt-4 mb-2 pt-2" style="font-family: 'Faktum-wide-bold';font-size: 18px;">
+                      ERIKA REZENDE
+                  </h4>
+                  <p class="lh-sm mt-2" style="font-size: 20px;font-family: 'Faktum';">Director, Finance</p>
+              </div>
+              <img src="https://cdn.sanity.io/images/tvz6muu8/production/a2e477467b527b16ab667a691a91b9b301af13dc-1200x1200.jpg?w=1080&h=1080&fit=crop&auto=format"
+                  class="img-fluid firm-team-img" alt="">
+          </div>
+      </div>
+  </div>
+</section>
   
-<!-- <div class="owl-carousel owl-theme">
-  <div class="item"><h4>1</h4></div>
-  <div class="item"><h4>2</h4></div>
-  <div class="item"><h4>3</h4></div>
-  <div class="item"><h4>4</h4></div>
-  <div class="item"><h4>5</h4></div>
-  <div class="item"><h4>6</h4></div>
-  <div class="item"><h4>7</h4></div>
-  <div class="item"><h4>8</h4></div>
-  <div class="item"><h4>9</h4></div>
-  <div class="item"><h4>10</h4></div>
-  <div class="item"><h4>11</h4></div>
-  <div class="item"><h4>12</h4></div>
-</div> -->
-
-
-<!-- <script>
- $('.testimonial-carousel').owlCarousel({
-  loop: true,
-  margin: 30,
-  nav: true,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    }
-  }
-});
-
-</script> -->
-
-  <!-- <script>
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementBottom = reveals[i].getBoundingClientRect().bottom;
-    var elementVisible = (windowHeight - elementTop) / windowHeight;
-    if (elementVisible > 0 && elementVisible < 1) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", reveal);
-reveal(); // To check the scroll position on page load
-
-
-const scrollRight = document.getElementById("scroll-right");
-const scrollLeft = document.getElementById("scroll-left");
-const lineContainer = document.querySelector(".line-container");
-
-scrollRight.addEventListener("click", () => {
-  lineContainer.scrollBy({
-    left: 200,
-    behavior: "smooth",
-  });
-});
-
-scrollLeft.addEventListener("click", () => {
-  lineContainer.scrollBy({
-    left: -200,
-    behavior: "smooth",
-  });
-});
-
-
-
-
-
-
-window.addEventListener("scroll", () => {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav a");
-  let current = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((a) => {
-    a.classList.remove("active");
-    if (a.getAttribute("href").includes(current)) {
-      a.classList.add("active");
-    }
-  });
-});
-
-
-
-</script> -->
-
-<script>
-const numberLine = document.querySelector('.number-line');
-const prevBtn = document.querySelector('#prev-btn');
-const nextBtn = document.querySelector('#next-btn');
-
-const scrollAmount = 300; // adjust this value to control how much the line scrolls per click
-
-prevBtn.addEventListener('click', () => {
-  numberLine.scrollLeft -= scrollAmount;
-});
-
-nextBtn.addEventListener('click', () => {
-  numberLine.scrollLeft += scrollAmount;
-});
-
-</script>
-  
-
-
-
-
-
 </body>
 
 </html>

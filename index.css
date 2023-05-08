@@ -1275,11 +1275,20 @@ input::placeholder {
     padding: 0 33.5px;
     border-right: 1px solid #fff;
   }
-  
 
-/* .item-owl:nth-child(1){
-    transform: scaleY(2.5);
-} */
+  .link-line::after{
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 0;
+    border-bottom: 3px solid black;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+  
 /* XL SIZE */
 @media screen and (max-width: 1150px) {
     #navbarNav ul li {
