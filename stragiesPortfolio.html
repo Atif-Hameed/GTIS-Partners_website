@@ -25,6 +25,66 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <title>Strategies | GTIS Partners</title>
+
+    <style>
+        .owl-carousel .owl-nav {
+            position: absolute;
+            bottom: -10%;
+            /* transform: translateY(-50%); */
+            width: 100%;
+        }
+
+        .owl-carousel .owl-prev,
+        .owl-carousel .owl-next {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .left-owl {
+            color: #000;
+            /* background-color:#000; */
+            border-radius: 10px;
+            padding: 10px 25px;
+            border: 1px solid #000;
+        }
+        
+
+        .right-owl {
+            color: #000;
+            /* background-color:#000; */
+            border-radius: 10px;
+            padding: 10px 25px;
+            border: 1px solid #000;
+        }
+
+        .owl-carousel .owl-prev {
+            left: 50%;
+
+        }
+
+        .owl-carousel .owl-next {
+            right: 34%;
+
+        }
+        @media screen and (max-width: 576px) {
+            .owl-carousel .owl-nav {
+            position: absolute;
+            bottom: 0%;
+            /* transform: translateY(-50%); */
+            width: 100%;
+        }
+        .owl-carousel .owl-prev {
+            left: 0%;
+        }
+
+        .owl-carousel .owl-next {
+            right: 50%;
+
+        }
+        }
+    </style>
 </head>
 
 <body>
@@ -55,7 +115,8 @@
                                 <a class="nav-link px-3" style="color: black;" href="esg.html">ESG</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link px-3 link-line position-relative" style="color: black;" href="stragiesPortfolio.html">Strategies & Portfolio</a>
+                                <a class="nav-link px-3 link-line position-relative" style="color: black;"
+                                    href="stragiesPortfolio.html">Strategies & Portfolio</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link px-3" style="color: black;" href="research.html">Research</a>
@@ -67,7 +128,8 @@
                                 <a class="nav-link px-3" style="color: black;" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link px-3" style="color: black;" href="logIn.html" target="_blank">Client Login</a>
+                                <a class="nav-link px-3" style="color: black;" href="logIn.html" target="_blank">Client
+                                    Login</a>
                             </li>
                         </ul>
                     </div>
@@ -86,10 +148,10 @@
                         id="navbarNav">
                         <ul class="navbar-nav  nav-top mt-1" style="font-family: 'Faktum';font-size: 1rem;">
                             <li class="nav-item ">
-                                <a class="nav-link px-3" style="color: black;" href="firm.html">Strategies</a>
+                                <a class="nav-link px-3" style="color: black;" href="stragiesPortfolio.html">Strategies</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link px-3" style="color: black;" href="#">Portfolio</a>
+                                <a class="nav-link px-3" style="color: black;" href="portflio.html">Portfolio</a>
                             </li>
 
                         </ul>
@@ -186,8 +248,8 @@
 
     <!-- USA SMALL HEADING -->
     <div class="container-fluid ub-pading-usa strg-usa-line reveal position-relative mb-4">
-        <div class="d-flex align-items-center justify-content-between ">
-            <h1 class="ub-main-head-usa   position-relative"><i id="dot-animate" class="fs-3 bi bi-circle-fill"></i>
+        <div class="d-sm-flex align-items-center justify-content-between ">
+            <h1 class="ub-main-head-usa text-sm-start text-center   position-relative"><i id="dot-animate" class="fs-3 bi bi-circle-fill"></i>
                 USA</h1>
             <p style="font-family: 'Faktum';">Strategy metric information as of 9/30/2022</p>
         </div>
@@ -218,7 +280,7 @@
                         <p class="m-0 firm-box-number">5,896</p>
                         <p class="" style="font-size: 22px;font-family: 'Faktum'; color: #000;">Units</p>
                     </div>
-                    <div class="col-sm-3 ms-4">
+                    <div class="col-sm-3 ms-sm-4">
                         <p class="m-0 firm-box-number">$1.3B</p>
                         <p class="" style="font-size: 21px;font-family: 'Faktum'; color: #000;">in total project cost
                         </p>
@@ -228,23 +290,83 @@
         </div>
 
 
-        <div class="owl-carousel owl-theme mb-5" style="transition: all 3s ease-in-out;">
-            <div class="item item-owl"><img class="img-fluid"
+        <div class="owl-carousel owl-theme mb-3 mt-sm-2 mt-5" style="transition: all 3s ease-in-out;">
+            <div class="item">
+                <img class="img-fluid " style="object-fit: cover; border-radius: 15px;"
                     src="https://cdn.sanity.io/images/tvz6muu8/production/f25bd353ae49accaba360e990f42c114aad4a729-1200x675.jpg?w=3840&q=75&fit=clip&auto=format"
-                    alt=""></div>
-            <div class="item item-owl"><img class="img-fluid"
+                    alt="">
+            </div>
+            <div class="item">
+                <img class="img-fluid" style="object-fit: cover;border-radius: 15px;"
                     src="https://cdn.sanity.io/images/tvz6muu8/production/b2f32c1a577c35c50be1b04afc1ead3031947d60-1200x778.jpg?w=1920&q=75&fit=clip&auto=format"
-                    alt=""></div>
-            <div class="item item-owl"><img class="img-fluid"
+                    alt="">
+            </div>
+            <div class="item">
+                <img class="img-fluid" style="object-fit: cover;border-radius: 15px;"
                     src="https://cdn.sanity.io/images/tvz6muu8/production/c72f15bdb9fa02ed20b78459deee7c3bbfaeff46-1200x675.png?w=1200&q=75&fit=clip&auto=format"
-                    alt=""></div>
+                    alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 pt-sm-0 pt-5">
+            <p style="font-family: 'Faktum-wide-bold';">TAVALO AT CADENCE, PHOENIX, AZ</p>
+            <p style="font-family: 'Faktum';">197-unit bungalow style single-story homes for a single family rental
+                community developed as the last
+                phase of a master-planned community near the entrance of the Cadence Master Plan</p>
+        </div>
+    </div>
+
+    <!-- LOGISTIC -->
+
+    <div class="container-fluid ub-pading-usa footer-border-animate position-relative reveal">
+        <p class="mb-5 esg-build-head" style="font-family: 'Faktum'; ">Logistics</p>
+        <div class="row mb-5">
+            <div class="col-lg-5 pe-5">
+                <p style="font-family: 'Faktum';font-size: 20px;">GTIS’ industrial focus is on self-development and
+                    acquisition of modern warehouse and distribution
+                    assets to meet local tenant requirements in strategic distribution hubs or population centers across
+                    the US Sunbelt. With a focus on 250,000-850,000 square foot projects, GTIS pursues specialty real
+                    estate sectors demonstrating strong fundamental dynamics.</p>
+            </div>
+            <div class="col-lg-5 offset-sm-1 d-sm-flex">
+                <div class="col-sm-3 ">
+                    <p class="m-0 firm-box-number">22</p>
+                    <p class="" style="font-size: 22px;font-family: 'Faktum'; color: #000;">Assets</p>
+                </div>
+                <div class="col-sm-6 ps-sm-4">
+                    <p class="m-0 firm-box-number">$896M</p>
+                    <p class="" style="font-size: 22px;font-family: 'Faktum'; color: #000;">in total project cost</p>
+                </div>
+            </div>
         </div>
 
+        <div class="owl-carousel owl-theme mb-3" style="transition: all 3s ease-in-out;">
+            <div class="item">
+                <img class="img-fluid" style="object-fit: cover; border-radius: 15px;"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/1fc334c219aa58ae8bd22331d64427bca8560a4c-1200x900.png?w=3840&q=75&fit=clip&auto=format"
+                    alt="">
+            </div>
+            <div class="item">
+                <img class="img-fluid" style="object-fit: cover; border-radius: 15px;"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/a6136c7d499818556a3b35ccd5826f689e51fca6-1200x629.jpg?w=1920&q=75&fit=clip&auto=format"
+                    alt="">
+            </div>
+            <div class="item">
+                <img class="img-fluid" style="object-fit: cover; border-radius: 15px;"
+                    src="https://cdn.sanity.io/images/tvz6muu8/production/3a122c8a90fabba6695382bb34674772b6181320-1200x763.jpg?w=1200&q=75&fit=clip&auto=format"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-6">
+            <p style="font-family: 'Faktum-wide-bold';">65 SOUTH HORTON, SEATTLE, WA</p>
+            <p style="font-family: 'Faktum';">Class A multi-story industrial development opportunity in Seattle, WA, in
+                an irreplaceable close-in location in the SoDo neighborhood of downtown Seattle, providing unparalleled
+                access to the CBD, and residential neighborhoods within Seattle and the Eastside suburbs.</p>
+        </div>
     </div>
 
 
     <!-- FOOTER -->
-    <div class="container-fluid footer-pad footer-border-animate position-relative reveal">
+    <div class="mt-5 container-fluid footer-pad footer-border-animate position-relative reveal">
         <div class="">
             <h1 class="footer-heading">Interested in investing or partnering with us?</h1>
             <a href="" class="my-lg-5 my-4 fs-5 fooetr-btn text-decoration-none d-flex justify-content-between">
@@ -330,23 +452,25 @@
 
 
     <script>
+
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
-            center: true,
+            navText: ["<i class='left-owl fs-4 fa-sharp fa-solid fa-arrow-left'></i>", "<i  class=' right-owl fs-4 fa-sharp fa-solid fa-arrow-right'></i>"],
+            dots: false,
             responsive: {
                 0: {
                     items: 1
                 },
                 600: {
-                    items: 2
+                    items: 1
                 },
                 1000: {
-                    items: 1
+                    items: 2
                 }
             }
-        })
+        });
     </script>
 
 

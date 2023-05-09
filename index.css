@@ -901,48 +901,6 @@ section{
     display: none;
 }
 
-
-/* .firm-carousel-year{
-    margin: 0 5rem;
-} */
-
-/* .scroll-container {
-    position: relative;
-    overflow-x: scroll;
-    scrollbar-width: none;  remove scrollbar
-  }
-  
-  .scroll-container::-webkit-scrollbar {
-    display: none;  remove scrollbar 
-  }
-  
-  .scroll-content {
-    width: 200%;
-  }
-  
-  .scroll-buttons {
-    position: absolute;
-    top: -300px;
-    left: 50px;
-    right: 50px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-  }
-  
-  .scroll-buttons button {
-    background-color: blue;
-    border: none;
-    font-size: 2rem;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  .scroll-buttons button:hover {
-    color: #f00;
-  } */
   
   .owl-next,
 .owl-prev {
@@ -1573,6 +1531,9 @@ input::placeholder {
 
 /* SMALL SIZE */
 @media screen and (max-width: 576px) {
+    .link-line::after{
+        display: none;
+      }
     .login-foot-last p{
         padding: 0 33.5px;
         border-bottom: 1px solid #fff;
@@ -1806,5 +1767,11 @@ input::placeholder {
     }
     .contact-main{
         padding: 40px 22px;
+    }
+    .ub-pading-usa {
+        padding: 20px 18px;
+    }
+    .esg-build-head{
+        font-size: 34px;
     }
 }
